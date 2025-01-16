@@ -1,6 +1,7 @@
 # AlexanderTheDev-Portfolio
 Hello,
-I am an Aspiring Junior Web Developer here you can find my portfolio website in its early stages, you are free to suggest changes and improvements!
+I am an Aspiring Junior Web Developer!
+Here you can find my portfolio website in its early stages, you are free to suggest changes and improvements!
 
 
 ## License
