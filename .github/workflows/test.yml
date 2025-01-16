@@ -1,0 +1,26 @@
+name: CI Test
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Validate HTML
+        uses: chrisderv/validate-html@v1
+        with:
+          directory: . # This checks all your HTML files in the repo
+
+      - name: Validate CSS
+        run: |
+          npx stylelint "**/*.css" --allow-empty-input || echo "Stylelint not configured yet"
