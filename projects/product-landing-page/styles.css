@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Glegoo:wght@400;700&family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
-
 /*GENERAL*/
 :root {
     --primary-color: #002c63;
@@ -26,7 +25,6 @@
 html, body {
     overflow-x: hidden; 
     scroll-behavior: smooth;
-    
 }
 
 html {
@@ -66,6 +64,7 @@ header {
     z-index: 1000;
 }
 
+
 header button {
     all: unset; 
     display: inline-block; 
@@ -97,13 +96,11 @@ header h1 {
     margin: 1rem 0px;
     font-size: 2rem;
     margin-right: 50px;
-    color: var(--background-color);  
-   
+    color: var(--background-color);      
 }
 h1::first-letter {
     color: var(--second-background-color);
 }
-
 
 img[src*="portfolio/assets/images/ALEXANDER.png"] {
     max-width: 60px;
@@ -111,9 +108,7 @@ img[src*="portfolio/assets/images/ALEXANDER.png"] {
     min-width: 50px;
     min-height: 50px;
     margin: 15px;
-  }
-
-
+}
 /*CONTACT*/
 
 #contact {

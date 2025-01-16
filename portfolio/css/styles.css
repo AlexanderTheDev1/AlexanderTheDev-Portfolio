@@ -45,7 +45,6 @@ a {
 
 a:visited {
     color: var(--link-visited);
-    border: none;
 }
 a:active {
     color: var(--primary-color);
@@ -70,7 +69,7 @@ header h1 {
     padding: 5px 2rem;  
 }
 
-.first::first-letter {
+h1::first-letter {
     color: var(--second-background-color);
 }
 
@@ -220,7 +219,7 @@ button:hover, button:focus {
     margin: 0.5em;
     transition: transform 0.5s ease-in-out;
 }
-#projects .project-container img:hover, #projects .project-container img:focus {
+#projects .project-container a:hover, #projects .project-container a:focus, #projects .project-container img:hover, #projects .project-container img:focus {
     transition: transform 0.5s ease-in-out;
     image-rendering: crisp-edges;
     transform: scale(1.1);
@@ -228,6 +227,8 @@ button:hover, button:focus {
 .project-container img {
     filter: blur(4px);
 }
+ 
+
 
 /*CONTACT*/
 #contact {
