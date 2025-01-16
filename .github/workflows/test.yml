@@ -16,5 +16,13 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v3
 
+      - name: Validate HTML
+        uses: chrisderv/validate-html@v1
+        with:
+          directory: . # This checks all your HTML files in the repo
+
+      - name: Skip CSS validation (no stylelint yet)
+        run: echo "No stylelint configuration yet, skipping."
+
       - name: Skip tests (no JS yet)
         run: echo "No tests yet, skipping."
