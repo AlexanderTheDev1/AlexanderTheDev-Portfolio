@@ -43,9 +43,14 @@ body {
 }
 
 a {
-    all: unset; 
-    color: var(--primary-color);
+    all: unset;
+    text-decoration: none;
+    color: var(--black);
 }
+a:focus {
+    border: 2px solid var(--black);
+}
+
 
 a:visited {
     color: var(--link-visited);
@@ -102,6 +107,7 @@ h1::first-letter {
     padding: 8px;
     color: var(--background-color);
     text-decoration: none;
+    cursor: pointer;
 }
 
 .myNav li a:hover, .myNav li a:focus {
@@ -195,6 +201,7 @@ img[src="portfolio/assets/images/whitesmoke.logo.png"] {
     color: var(--text-color);
     text-decoration: none;
     transition: transform 0.2s ease-in-out;
+    cursor: pointer;
 }
 
 #projects h3::first-letter {
@@ -205,7 +212,7 @@ img[src="portfolio/assets/images/whitesmoke.logo.png"] {
     color: var(--primary-color);
 }
 
-#projects .project-container h3:hover, #projects .project-container h3:focus {
+.project-container h3:hover, .project-container h3:focus {
     color: var(--button-hover-bg-color);  
     transition: transform 0.2s ease-in-out;
     image-rendering: crisp-edges;
@@ -217,7 +224,7 @@ img[src="portfolio/assets/images/whitesmoke.logo.png"] {
     margin: 20px;
 }
 
-#projects .project-container {
+.project-container {
     all: unset;
 }
 
@@ -225,13 +232,14 @@ img[src="portfolio/assets/images/whitesmoke.logo.png"] {
     margin: 0.5em;
     transition: transform 0.5s ease-in-out;
 }
-#projects .project-container a:hover, #projects .project-container a:focus, #projects .project-container img:hover, #projects .project-container img:focus {
+.project-container a:hover, .project-container a:focus, .project-container img:hover, .project-container img:focus {
     transition: transform 0.5s ease-in-out;
     image-rendering: crisp-edges;
     transform: scale(1.1);
 }
 .project-container img {
     filter: blur(4px);
+    cursor: pointer;
 }
  
 
@@ -284,6 +292,7 @@ img[src*="portfolio/assets/icons/mail.png"], img[src*="portfolio/assets/icons/gi
 
 #cont a, #w3c {
     transition: transform 0.5s ease-in-out;
+    cursor: pointer;
 }
 
 #w3c:hover,  #w3c:focus, #cont a:hover, #cont a:focus { 
