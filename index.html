@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta name="description" content="Welcome to my personal portfolio. I am a web developer showcasing my skills, projects, and experience.">
+        <meta http-equiv="Content-Security-Policy" content="script-src 'none'">
         <link href="portfolio/css/styles.css" rel="stylesheet">
         <link rel="icon" type="image/svg" href="portfolio/assets/images/white-logo2.png">
         <title>Alexander The Dev</title>
@@ -25,7 +26,7 @@
         <div id="about">
             <img src="portfolio/assets/images/whitesmoke.logo.png" alt="logo image">
             <h2>Alexander The Dev</h2>
-            <button onclick="window.location.href='index.html';"><span id="button-text">Learn More</span></button>
+            <button id="myButton"><span id="button-text">Learn More</span></button>
         </div>
         <!--PROJECTS-->
         <section id="projects">
@@ -118,7 +119,7 @@
         <!--CONTACT-->
          <footer id="contact">
             <h2>Contact</h2>
-            <nav id="conct">
+            <nav id="cont">
             <a href="mailto:alexkotsidis1@gmail.com"><img src="portfolio/assets/icons/mail.png"  alt="mail icon"></a>
             <a href="https://github.com/AlexanderTheDev1"><img src="portfolio/assets/icons/github.png"  alt="github icon"></a>
             <a href="tel:+306993316072"><img src="portfolio/assets/icons/telephone.png"  alt="phone icon"></a>
@@ -129,6 +130,6 @@
             </a>
         </p>
          </footer>
-        <!--<script src="portfolio/js/script.js"></script>-->
+        <script src="portfolio/js/script.js"></script>
     </body>
 </html>

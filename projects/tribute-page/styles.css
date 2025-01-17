@@ -162,11 +162,11 @@ img[src*="portfolio/assets/icons/mail.png"], img[src*="portfolio/assets/icons/gi
     all: unset;
 }
 
-#conct a, #w3c {
+#cont a, #w3c {
     transition: transform 0.5s ease-in-out;
 }
 
-#w3c:hover,  #w3c:focus, #conct a:hover, #conct a:focus { 
+#w3c:hover,  #w3c:focus, #cont a:hover, #cont a:focus { 
     transition: transform 0.5s ease-in-out;
     image-rendering: crisp-edges;
     transform: scale(1.1);
