@@ -70,7 +70,7 @@ header {
 }
 
 
-header button {
+header .button {
     all: unset; 
     display: inline-block; 
     color: var(--background-color);
@@ -88,7 +88,7 @@ header button {
 
 
 
-header button:hover, header button:focus {
+header .button:hover, header .button:focus {
     background-color: var(--button-hover-bg-color);
     transition: .5s ease-out!important;
     transition: transform 0.2s ease-in-out;
