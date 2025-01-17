@@ -23,7 +23,7 @@
     box-sizing: border-box;
 }
 img {
-    overflow: visible;
+    object-fit: cover;
 }
 html, body {
     overflow-x: hidden; 

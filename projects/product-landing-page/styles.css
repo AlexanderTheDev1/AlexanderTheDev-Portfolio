@@ -23,7 +23,7 @@
 }
 
 img {
-    overflow: visible;
+    object-fit: cover;
 }
 
 html, body {

@@ -25,7 +25,6 @@
 }
 img {
     object-fit: cover;
-    overflow: visible;
 }
 
 html, body {
