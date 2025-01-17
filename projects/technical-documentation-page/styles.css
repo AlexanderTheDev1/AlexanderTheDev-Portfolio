@@ -21,6 +21,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+img {
+    overflow: visible;
+}
 
 html, body {
     overflow-x: hidden; 
