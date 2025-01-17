@@ -155,29 +155,16 @@ img[src*="portfolio/assets/icons/mail.png"], img[src*="portfolio/assets/icons/gi
     border-radius: 20px;
 }
 
- img[src*="portfolio/assets/icons/mail.png"], img[src*="portfolio/assets/icons/github.png"], img[src*="portfolio/assets/icons/telephone.png"] {
-    border-radius: 20px;
-    transition: transform 0.5s ease-in-out;
-    
- }
- img[src*="portfolio/assets/icons/mail.png"]:hover, img[src*="portfolio/assets/icons/mail.png"]:focus, img[src*="portfolio/assets/icons/github.png"]:hover, img[src*="portfolio/assets/icons/github.png"]:focus, img[src*="portfolio/assets/icons/telephone.png"]:hover, img[src*="portfolio/assets/icons/telephone.png"]:focus {
-    transition: transform 0.5s ease-in-out;
-    image-rendering: crisp-edges;
-    transform: scale(1.2);   
- }
-
- #w3c img {
+#w3c img {
     all: unset;
+}
+
+#conct a, #w3c {
     transition: transform 0.5s ease-in-out;
 }
 
-
-#w3c:hover,  #w3c:focus { 
+#w3c:hover,  #w3c:focus, #conct a:hover, #conct a:focus { 
     transition: transform 0.5s ease-in-out;
     image-rendering: crisp-edges;
     transform: scale(1.1);
-}
-#w3c:focus {
-    border: 2px solid var(--black);
-    border-radius: 1px;
 }
