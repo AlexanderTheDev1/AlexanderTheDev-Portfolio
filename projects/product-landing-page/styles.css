@@ -22,7 +22,8 @@
     box-sizing: border-box;
 }
 
-img {
+img, video, canvas {
+    overflow: clip; 
     object-fit: cover;
 }
 
