@@ -25,7 +25,7 @@
 }
 
 img, video, canvas {
-    overflow: hidden; 
+    overflow:clip;
 }
 
 html, body {
