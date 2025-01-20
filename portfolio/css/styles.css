@@ -25,8 +25,7 @@
 }
 
 img, video, canvas {
-    overflow: clip; 
-    object-fit: cover;
+    overflow: hidden; 
 }
 
 html, body {
