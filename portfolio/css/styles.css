@@ -23,7 +23,6 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    outline: 1px solid red;
 }
 img, video, canvas {
     overflow: clip;
@@ -31,6 +30,7 @@ img, video, canvas {
 html, body {
     scroll-behavior: smooth;
     scroll-padding: 15rem;
+    scrollbar-color: var(--second-background-color);
 }
 html {
     font-size: 16px;
@@ -47,7 +47,7 @@ a {
     color: var(--black);
 }
 .project-container:focus  {
-    outline: 2px solid var(--black) !important;
+    outline: 2px solid var(--black);
 }
 a:visited {
     color: var(--link-visited);
@@ -82,7 +82,7 @@ header h1 {
     color: var(--background-color);
     padding: 1rem;
 }
-h1::first-letter {
+header h1::first-letter {
     color: var(--second-background-color);
 }
 /*NAV*/
@@ -90,8 +90,7 @@ h1::first-letter {
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
-    align-items: center;
-    
+    align-items: center;   
 }
 .myNav ul {
     list-style: none;
@@ -133,7 +132,6 @@ h1::first-letter {
 }
 #about > h2::first-letter {
     color: var(--primary-color);
-
 }
 img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
   width: 220px;
@@ -164,7 +162,7 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
     background-color: var(--button-hover-bg-color);
     color: var(--background-color);
     box-shadow: 8px -8px 0px var(--second-background-color), -8px 8px 0px var(--primary-color);
-    transition: .5s ease-out!important;
+    transition: .5s ease-out;
     border: 4px solid var(--background-color);
     transition: transform 0.2s ease-in-out;
     image-rendering: crisp-edges;
@@ -179,17 +177,20 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
     background-color: var(--soon);
     padding: 1.5rem;
 }
+.project-container {
+    display: inline;
+}
 .project-container h3 {
-    color: var(--text-color);
-    text-decoration: none;
+    color: var(--primary-color);   
     display: flex;
     justify-content: space-evenly;
     transition: transform 0.4s ease-in-out;
     cursor: pointer;
 }
 .project-container h3::first-letter {
-    font-size: 2rem;
+    font-size: 5rem;
     color: var(--black);
+    font-weight: bold;
 }
 #projects .soon {
     color: var(--primary-color);
@@ -201,19 +202,20 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
     transform: scale(1.1);
     filter: blur(0);
 }
-
 .project-container img {
     margin: 1rem;
     transition: transform 0.4s ease-in-out;
-    filter: blur(4px);
+    filter: blur(3px);
     cursor: pointer;
     width: 250px;
     height: 150px;
 }
 #projects a:focus {
-    
+    transition: transform 0.4s ease-in-out;
+    image-rendering: crisp-edges;
+    transform: scale(1.1);
+    filter: blur(0);
 }
-
 /*CONTACT*/
 #contact {
     margin-top: 20rem;
@@ -226,7 +228,7 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
     background-color: var(--background);
     text-decoration: underline var(--secondary-color);
 }
-#contact h2::first-letter {
+#contact h4::first-letter {
     color: var(--primary-color);
 }
 #contact a {

@@ -102,7 +102,7 @@ header h1 {
     color: var(--background-color);
     padding: 1rem;
 }
-h1::first-letter {
+header h1::first-letter {
     color: var(--second-background-color);
 }
 img[src*="portfolio/assets/images/ALEXANDER.webp"] {
@@ -122,7 +122,7 @@ img[src*="portfolio/assets/images/ALEXANDER.webp"] {
     background-color: var(--background);
     text-decoration: underline var(--secondary-color);
 }
-#contact h2::first-letter {
+#contact h4::first-letter {
     color: var(--primary-color);
 }
 #contact a {
