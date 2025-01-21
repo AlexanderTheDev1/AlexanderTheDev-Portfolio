@@ -73,7 +73,7 @@ header {
     display: flex; 
     justify-content: space-between;
     align-items: center; 
-    padding: 5px 10px; 
+    padding: 1rem; 
     background-color: var(--primary-color);
     position: sticky;
     transition: top 0.5s;
@@ -84,7 +84,7 @@ header {
 header h1 {
     font-size: 2rem;
     color: var(--background-color);
-    padding: 5px 20px;
+    padding: 1rem;
 }
 
 h1::first-letter {
@@ -95,7 +95,7 @@ h1::first-letter {
 .myNav {
     display: flex;
     justify-content: flex-end;
-    padding: 10px;
+    padding: 1rem;
     align-items: center;
     
 }
@@ -105,11 +105,11 @@ h1::first-letter {
 }
 
 .myNav li {
-    font-size: 1.5rem;
+    font-size: 1.35rem;
 }
 
 .myNav li a {
-    padding: 8px;
+    padding: 1rem;
     color: var(--background-color);
     text-decoration: none;
     cursor: pointer;
@@ -124,7 +124,7 @@ h1::first-letter {
 }
  
 .myNav span {
-    padding: 5px;
+    padding: 0.5rem;
 }
 /*ABOUT*/
 #about {
