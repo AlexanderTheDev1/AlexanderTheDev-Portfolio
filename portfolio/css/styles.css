@@ -269,7 +269,7 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
     border-radius: 50%;
 }
 
-img[src*="portfolio/assets/icons/webp"], img[src*="portfolio/assets/icons/github.webp"], img[src*="portfolio/assets/icons/telephone.webp"] {
+img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/github.webp"], img[src*="portfolio/assets/icons/telephone.webp"] {
     width: 50px;
     height: 50px;
     border-radius: 20px;
