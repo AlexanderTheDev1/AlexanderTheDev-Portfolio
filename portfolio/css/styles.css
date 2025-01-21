@@ -29,6 +29,7 @@ img, video, canvas {
 } 
 html, body {
     scroll-behavior: smooth;
+    scroll-padding: 15rem;
 }
 html {
     font-size: 16px;
@@ -110,7 +111,8 @@ h1::first-letter {
 /*ABOUT*/
 #about {
     background-color: var(--background);
-    margin: 3rem;
+    padding: 7rem 10rem 10rem 10rem;
+    margin: 1rem 10rem 10rem 10rem;
     text-align: center;
 }
 #about > h2 {
@@ -125,8 +127,8 @@ h1::first-letter {
 
 }
 img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
-  width: 250px;
-  height: 250px;
+  width: 220px;
+  height: 220px;
   image-rendering: crisp-edges;
 }
 #about a {
@@ -197,8 +199,8 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
     transition: transform 0.5s ease-in-out;
     filter: blur(4px);
     cursor: pointer;
-    width: 250px;
-    height: 150px;
+    width: 220px;
+    height: 120px;
 }
 .project-container a:hover, .project-container a:focus, .project-container img:hover, .project-container img:focus {
     transition: transform 0.5s ease-in-out;
@@ -207,8 +209,9 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
 }
 /*CONTACT*/
 #contact {
-    margin: 1.5rem;
+    margin-top: 20rem;
     text-align: center;
+    padding: 3rem;
 }
 #contact h4 {
     margin: 1rem;
@@ -230,15 +233,15 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
     border-radius: 50%;
 }
 img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/github.webp"], img[src*="portfolio/assets/icons/telephone.webp"] {
-    width: 50px;
-    height: 50px;
+    width: 40px;
+    height: 40px;
     border-radius: 20px;
     image-rendering: crisp-edges;
 }
  #w3c img {
     all: unset;
-    width: 100px;
-    height: 50px;
+    width: 80px;
+    height: 30px;
 }
 #cont a, #w3c {
     transition: transform 0.5s ease-in-out;
