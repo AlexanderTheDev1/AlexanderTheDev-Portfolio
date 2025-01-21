@@ -189,7 +189,7 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
 }
 .project-container h3::first-letter {
     font-size: 2rem;
-    color: var(--primary-color);
+    color: var(--black);
 }
 #projects .soon {
     color: var(--primary-color);
@@ -212,7 +212,7 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
 }
 #projects a:focus {
     outline: 2px solid var(--black);
-    filter: blur(0);
+    background-color: lightyellow;
 }
 
 /*CONTACT*/
