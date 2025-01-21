@@ -117,12 +117,12 @@ img[src*="portfolio/assets/images/ALEXANDER.png"] {
 }
 /*CONTACT*/
 #contact {
-    margin: 50px;
+    margin: 1.5rem;
     text-align: center;
 }
 
 #contact h4 {
-    margin: 20px;
+    margin: 1rem;
     font-size: 3.5rem;
     background-color: var(--background);
     text-decoration: underline var(--secondary-color);
@@ -134,10 +134,11 @@ img[src*="portfolio/assets/images/ALEXANDER.png"] {
 
 #contact a {
     display: inline-block;
-    padding: 5px;
-    margin: 20px;
+    padding: 0.5rem;
+    margin: 1rem;
     border-radius: 30px;
 }
+
 
 #contact img {
     display: block; 
@@ -145,11 +146,10 @@ img[src*="portfolio/assets/images/ALEXANDER.png"] {
 }
 
 img[src*="portfolio/assets/icons/mail.png"], img[src*="portfolio/assets/icons/github.png"], img[src*="portfolio/assets/icons/telephone.png"] {
-    max-width: 60px;
-    max-height: 60px;
-    min-width: 50px;
-    min-height: 50px;
+    width: 50px;
+    height: 50px;
     border-radius: 20px;
+    image-rendering: crisp-edges;
 }
 
  #w3c img {
