@@ -111,7 +111,8 @@ h1::first-letter {
 /*ABOUT*/
 #about {
     background-color: var(--background);
-    padding: 7rem 10rem 10rem 10rem;
+    padding-bottom: 8rem;
+    padding-top: 5rem;
     margin: 1rem 10rem 10rem 10rem;
     text-align: center;
 }
