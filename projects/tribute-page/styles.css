@@ -136,6 +136,8 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 }
  #w3c img {
     all: unset;
+    width: 100px;
+    height: 50px;
 }
 #cont a, #w3c {
     transition: transform 0.5s ease-in-out;
