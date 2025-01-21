@@ -42,14 +42,18 @@ a {
     text-decoration: none;
     color: var(--black);
 }
-a:focus {
-    border: 2px solid var(--black);
+.project-container:focus  {
+    outline: 2px solid var(--black) !important;
 }
 a:visited {
     color: var(--link-visited);
 }
 a:active {
     color: var(--primary-color);
+}
+a:hover {
+    outline: none;
+    border: none;
 }
 h1, h2, h3 {
     line-height: 1.3;
@@ -122,6 +126,9 @@ img[src*="portfolio/assets/images/ALEXANDER.webp"] {
     padding: 0.5rem;
     margin: 1rem;
     border-radius: 30px;
+}
+#contact a:focus {
+    outline: 2px solid var(--black);
 }
 #contact img {
     display: block; 
