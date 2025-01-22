@@ -151,12 +151,10 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 }
 #w3c:hover, #cont a:hover { 
     transition: transform 0.5s ease-in-out;
-    image-rendering: crisp-edges;
     transform: scale(1.1);
 }
 #w3c:focus, #cont a:focus {
     transition: transform 0.5s ease-in-out;
-    image-rendering: crisp-edges;
     transform: scale(1.1);
     outline: 4px solid var(--secondary-color);
 }
