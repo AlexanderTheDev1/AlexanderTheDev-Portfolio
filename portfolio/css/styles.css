@@ -60,7 +60,7 @@ a:hover {
     border: none;
 }
 a:focus {
-    outline: 4px solid var(--secondary-color);
+    outline: 3px solid var(--secondary-color);
 }
 h1, h2, h3 {
     line-height: 1.3;
@@ -109,9 +109,9 @@ header h1::first-letter {
     color: var(--second-background-color);
     background-color: var(--button-hover-bg-color);
     border-radius: 10px;
-    outline: none;
-    outline: 2px solid var(--background-color);
+    outline: 2px solid var(--second-background-color);
 }
+ 
 .myNav span {
     padding: 0.5rem;
 }
@@ -150,22 +150,23 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
     padding: 1rem;
     cursor: pointer;
     text-align: center;
-    transition: 0.3s ease-out;
+    transition: 0.5s ease-out;
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-    border: 4px solid var(--black);
+    border: 3px solid var(--black);
     font-size: 0.5rem;
+    position: relative;
 }
 #button-text {
     font-size: 1.5rem;
+    position: relative;
+    transform: none;
 }
 #about a:hover, #about a:focus {
     background-color: var(--button-hover-bg-color);
-    color: var(--background-color);
     box-shadow: 8px -8px 0px var(--second-background-color), -8px 8px 0px var(--primary-color);
-    transition: .5s ease-out;
-    border: 4px solid var(--background-color);
-    transition: transform 0.2s ease-in-out;
-    image-rendering: crisp-edges;
+    transition: transform 0.5s ease-in-out;
+    border-color: var(--background-color);
+    transform-origin: center;
     transform: scale(1.1);
 }
 /*PROJECTS*/
