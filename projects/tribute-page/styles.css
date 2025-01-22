@@ -91,11 +91,9 @@ header .button {
 }
 header .button:hover, header .button:focus {
     background-color: var(--button-hover-bg-color);
-    transition: .5s ease-out!important;
+    transition: 0.5s ease-out!important;
     transition: transform 0.2s ease-in-out;
-    image-rendering: crisp-edges;
     transform: scale(1.1);
-  
 }
 header h1 {
     font-size: 2rem;
