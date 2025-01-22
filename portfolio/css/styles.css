@@ -30,7 +30,6 @@ img, video, canvas {
 html, body {
     scroll-behavior: smooth;
     scroll-padding: 15rem;
-    scrollbar-color: var(--second-background-color);
 }
 html {
     font-size: 16px;
@@ -42,9 +41,9 @@ body {
     line-height: 1.5;
 }
 a {
-    all: unset;
     text-decoration: none;
     color: var(--black);
+    line-height: 1.3;
 }
 .project-container:focus  {
     outline: 2px solid var(--black);
@@ -60,7 +59,7 @@ a:hover {
     border: none;
 }
 a:focus {
-    outline: 3px solid var(--secondary-color);
+    outline: 3px solid var(--black);
 }
 h1, h2, h3 {
     line-height: 1.3;
@@ -170,6 +169,17 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
     transform: scale(1.1);
 }
 /*PROJECTS*/
+#projects h3 {
+    width: 100%;
+    text-align: center; 
+    font-size: 2.5rem; 
+    color: var(--primary-color); 
+    margin-bottom: 2rem; 
+    padding: 2rem;
+}
+#projects h3::first-letter {
+    color: var(--secondary-color);
+}
 #projects {
     display: flex;
     flex-wrap: wrap;
@@ -178,29 +188,31 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
     background-color: var(--soon);
     padding: 1.5rem;
 }
-.project-container {
-    display: inline;
-}
-.project-container h3 {
-    color: var(--primary-color);   
+
+.project-container { 
     display: flex;
-    justify-content: space-evenly;
+    flex-direction: column; 
+    align-items: center; 
     transition: transform 0.4s ease-in-out;
     cursor: pointer;
 }
-.project-container h3::first-letter {
-    font-size: 5rem;
-    color: var(--black);
-    font-weight: bold;
+.project-container a::first-letter {
+    font-size: 1.6rem;
+    color: var(--black);    
 }
-#projects .soon {
+.project-container a {  
+    font-size: 1.3rem;
     color: var(--primary-color);
+    font-weight: bold;
+    border-radius: 10px;
+    margin: 0.4rem;
+    padding: 0.2rem;
 }
-.project-container h3:hover, .project-container img:hover {
+.project-container a:hover, .project-container img:hover, .project-container img:focus, .project-container a:focus {
     color: var(--button-hover-bg-color);  
     transition: transform 0.4s ease-in-out;
-    image-rendering: crisp-edges;
-    transform: scale(1.1);
+    transform: scale(1.05);
+    background-color: var(--second-background-color);
     filter: blur(0);
 }
 .project-container img {
@@ -210,11 +222,10 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
     cursor: pointer;
     width: 250px;
     height: 150px;
+    max-width: 100%;
 }
-#projects a:focus {
-    transition: transform 0.4s ease-in-out;
+.project-container img:hover, .project-container img:focus {
     image-rendering: crisp-edges;
-    transform: scale(1.1);
     filter: blur(0);
 }
 /*CONTACT*/
@@ -238,7 +249,6 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
     margin: 1rem;
     border-radius: 30px;
 }
-
 #contact img {
     display: block; 
     border-radius: 50%;
@@ -262,6 +272,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     transition: transform 0.5s ease-in-out;
     image-rendering: crisp-edges;
     transform: scale(1.1);
+    outline: 4px solid var(--secondary-color);
 }
 /*MEDIA -Extra Small Devices*/
 @media screen and (min-width: 480px) {
