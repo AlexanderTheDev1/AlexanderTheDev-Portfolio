@@ -193,7 +193,7 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
     display: flex;
     flex-direction: column; 
     align-items: center; 
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     cursor: pointer;
 }
 .project-container a::first-letter {
@@ -207,17 +207,18 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
     border-radius: 10px;
     margin: 0.4rem;
     padding: 0.2rem;
+    transition: transform 0.5s ease-in-out;
 }
 .project-container a:hover, .project-container img:hover, .project-container img:focus, .project-container a:focus {
     color: var(--button-hover-bg-color);  
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     transform: scale(1.05);
     background-color: var(--second-background-color);
     filter: blur(0);
 }
 .project-container img {
     margin: 1rem;
-    transition: transform 0.4s ease-in-out;
+    transition: transform 0.5s ease-in-out;
     filter: blur(3px);
     cursor: pointer;
     width: 250px;
