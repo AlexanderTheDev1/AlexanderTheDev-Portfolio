@@ -29,6 +29,7 @@ img, video, canvas {
 } 
 html, body {
     scroll-behavior: smooth;
+    will-change: transform;
     scroll-padding: 15rem;
 }
 html {
