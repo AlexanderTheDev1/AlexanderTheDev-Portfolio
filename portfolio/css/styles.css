@@ -1,4 +1,4 @@
-/*GENERAL*/
+/* #region GENERAL */
 :root {
     --primary-color: #002c63;
     --secondary-color: #FDC500; 
@@ -67,7 +67,8 @@ a:focus {
 h1, h2, h3 {
     line-height: 2.6rem;
 }
-/*HEADER*/
+/* #endregion */
+/* #region HEADER*/
 header {
     display: flex; 
     justify-content: space-between;
@@ -88,7 +89,8 @@ header h1 {
 header h1::first-letter {
     color: var(--second-background-color);
 }
-/*NAV*/
+/* #endregion */
+/* #region NAV*/
 .myNav {
     display: flex;
     justify-content: flex-end;
@@ -118,8 +120,8 @@ header h1::first-letter {
 .myNav span {
     padding: 0.5rem;
 }
-
-/*ABOUT*/
+/* #endregion */
+/* #region ABOUT*/
 #about {
     background-color: var(--background);
     padding-top: 6rem;
@@ -172,7 +174,8 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
     transform-origin: center;
     transform: scale(1.1);
 }
-/*PROJECTS*/
+/* #endregion */
+/* #region PROJECTS*/
 #projects h3 {
     width: 100%;
     text-align: center; 
@@ -232,7 +235,8 @@ img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
     image-rendering: crisp-edges;
     filter: blur(0);
 }
-/*CONTACT*/
+/* #endregion */
+/* #region CONTACT*/
 #contact {
     margin-top: 20rem;
     text-align: center;
@@ -281,8 +285,8 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     transform: scale(1.1);
     outline: 4px solid var(--secondary-color);
 }
-
-
+/* #endregion */
+/* #region MEDIA*/
 /*MEDIA -Extra Small Devices*/
 @media screen and (min-width: 331px) and (max-width: 480px) {
     :root {
@@ -775,3 +779,4 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
         color: var(--background-color);
     }
 }
+/* #endregion */
