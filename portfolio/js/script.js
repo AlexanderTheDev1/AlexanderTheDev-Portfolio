@@ -1,17 +1,8 @@
-console.log("Testing if this works")
-let sentence = "JavaScript is awesome!";
-let position = sentence.indexOf("awesome");
+console.log("Button clicked");
+document.getElementById("menu-toggle").addEventListener("click", function() {
+    console.log("Button clicked");
+    document.querySelector(".menu-wrap").classList.toggle('menu-active');
+    document.querySelector(".ham-menu").classList.toggle('ham-menu2');
+});
 
-console.log(position);
-
-let age = prompt("How old are you");
-if (age != null) {
-    console.log(`You are ${age} years old.`);
-} else {
-    console.log("User cancelled the prompt");
-}
-do {
-    console.log("Put Your age");
-    age = prompt("How old are you");
-} while (age = null);
  

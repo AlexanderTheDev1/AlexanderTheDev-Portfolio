@@ -8,7 +8,7 @@
         <link href="portfolio/css/styles.css" rel="stylesheet">
         <link rel="icon" type="image/svg" href="portfolio/assets/images/white-logo2.webp">
         <link rel="preload" href="https://fonts.googleapis.com" as="font" type="font/woff2" crossorigin="anonymous">
-        <title>Alexander The Dev</title>      
+        <title>Alexander The Dev</title>     
     </head>
     <body>
         <!--HEADER-->
@@ -22,19 +22,18 @@
                 <li><a href="#contact"><span>Contact</span></a></li>
                 </ul>
                 </nav>
-                <nav class="myNav-ham-menu">
-                    <input type="checkbox" id="menu-open">
-                    <label for="menu-open" class="hamburger-menu">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                    </label>
+                <button id="menu-toggle">
+                    ☰
+                </button>
+                <div class="menu-wrap">
+                    <nav class="ham-menu">
                         <ul>
                             <li><a href="#about"><span>About</span></a></li>
                             <li><a href="#projects"><span>Projects</span></a></li>
                             <li><a href="#contact"><span>Contact</span></a></li>
-                            </ul>
-            </nav>
+                            </ul>     
+                        </nav> 
+                    </div>           
         </header>
         <!--ABOUT-->
         <div id="about">
@@ -168,6 +167,6 @@
             </a>
         </p>     
          </footer>
-         <!--<script script-src="portfolio/js/script.js"></script>--> 
+         <script src="portfolio/js/script.js"></script> 
     </body>
 </html>

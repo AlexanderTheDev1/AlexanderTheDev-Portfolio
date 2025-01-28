@@ -21,6 +21,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 2px solid red;
 }
 img, video, canvas {
     overflow: clip;
@@ -118,9 +119,7 @@ header h1::first-letter {
 .myNav span {
     padding: 0.5rem;
 }
-.myNav-ham-menu {
-    display: none;
-}
+
 /*ABOUT*/
 #about {
     background-color: var(--background);
@@ -288,39 +287,39 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 14px;
     }
-   .myNav {
+    .myNav {
         display: none;
     }
-    .myNav-ham-menu {
-        list-style: none;
-        display: flex; 
-        justify-content: space-between; 
-        border-collapse: collapse; 
+    .menu-wrap {
+        display: none;
     }
-    .myNav-ham-menu ul li {
-        display: inline-flex;
-        margin: 0.3em 1em;
+    .menu-wrap.menu-active {
+        display: block;
     }
-    .myNav-ham-menu ul {
-        list-style-type: none;
+    .ham-menu {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        position: fixed;
     }
-    .myNav-ham-menu {
-        display: flex;
-        justify-content: flex-end;
-        padding: 1rem;
-        align-items: center;   
+    .ham-menu.ham-menu2 {
+        transform: translateX(0);
     }
-    .myNav-ham-menu li {
-        font-size: 1rem;
-    }
-    .myNav-ham-menu li a {
-        padding: 1rem;
-        color: var(--background-color);
-        text-decoration: none;
+    #menu-toggle {
+        background-color: var(--second-background-color);
+        padding: 0 0.5rem;
+        font-size: 1.4rem;
+        border-radius: 10px;
         cursor: pointer;
+        z-index: 1000;
+        display: block;
+        position: relative;
     }
-    .myNav-ham-menu span {
-        padding: 0.5rem;
+    .ham-menu li {
+        text-decoration: none;
+        list-style: none;
+    }
+    .ham-menu a {
+        color: var(--background-color);
     }
 }
 /*MEDIA -Small Devices*/
@@ -328,19 +327,60 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 15px;
     }
-
+    .myNav {
+        display: none;
+    }
 }
 /*MEDIA -Medium Devices*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     :root {
         --font-size: 16px;
     }
-
+    .myNav {
+        display: none;
+    }
+    .menu-wrap {
+        display: none;
+    }
+    .menu-wrap.menu-active {
+        display: block;
+    }
+    .ham-menu {
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
+        position: fixed;
+    }
+    .ham-menu.ham-menu2 {
+        transform: translateX(0);
+    }
+    #menu-toggle {
+        background-color: var(--second-background-color);
+        padding: 0 0.5rem;
+        font-size: 1.4rem;
+        border-radius: 10px;
+        cursor: pointer;
+        z-index: 1000;
+        display: block;
+        position: relative;
+    }
+    .ham-menu li {
+        text-decoration: none;
+        list-style: none;
+    }
+    .ham-menu a {
+        color: var(--background-color);
+    }
 }
 /*MEDIA -Large Devices*/ 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
     :root {
         --font-size: 17px;
+    }
+    #menu-toggle {
+        display: none;
+    }
+    .menu-wrap {
+        display: none;
     }
 
 }
@@ -349,12 +389,24 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 18px;
     }
+    #menu-toggle {
+        display: none;
+    }
+    .menu-wrap {
+        display: none;
+    }
 
 } 
 /*MEDIA -Extra Extra Large Devices*/
 @media screen and (min-width: 1441px) {
     :root {
         --font-size: 20px;
+    }
+    #menu-toggle {
+        display: none;
+    }
+    .menu-wrap {
+        display: none;
     }
 
 } 
