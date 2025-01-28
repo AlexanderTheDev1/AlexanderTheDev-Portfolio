@@ -292,26 +292,29 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     .menu-wrap {
         opacity: 0;
         display: none;
-        transition: opacity 0.5s ease;       
     }
     .menu-wrap.menu-active {
         opacity: 1;
         display: block;
+        transition: transform 0.5s ease-in-out;
     }
     #menu-toggle.menu-rotated {
         transform: rotate(90deg);
-        background-color: var(--secondary-color);
+        background-color: var(--black);
+        color: var(--second-background-color);
+        border: 2px solid var(--second-background-color);
+        transition: transform 0.5s ease-in-out; 
     }
     #ham-menu {
-        transform: translateX(-100%);
-        transition: transform 0.5s ease;
+        transform: translateX(0);
         height: 100%;
         width: 100%;
         background-color: var(--black);
-        position: relative;
+        transition: transform 0.5s ease-in-out;
     }
     #ham-menu.ham-menu2 {
         transform: translateX(0);
+        transition: transform 0.5s ease-in-out; 
     }
     #menu-toggle {
         background-color: var(--second-background-color);
@@ -321,8 +324,8 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
         cursor: pointer;
         z-index: 1000;
         display: block; 
-        transition: transform 0.5s ease;
-
+        transition: transform 0.5s ease-in-out;
+        border: 2px solid var(--black);
     }
     #ham-menu li {
         text-decoration: none;
