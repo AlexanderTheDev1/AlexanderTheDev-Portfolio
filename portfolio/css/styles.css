@@ -396,3 +396,34 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     }
 
 } 
+/*Just for maximum responsiveness*/
+@media screen and (min-width: 240px) and (max-width: 319px){
+    :root {
+        --font-size: 13px;
+    }
+@media screen and (min-width: 120px) and (max-width: 239px){
+    :root {
+        --font-size: 12px;
+    }
+    #menu-toggle {
+        display: none;
+    }
+    .menu-wrap {
+        display: none;
+    }
+
+}
+@media screen and (min-width: 60px) and (max-width: 119px){
+    :root {
+        --font-size: 11px;
+    }
+    #menu-toggle {
+        display: none;
+    }
+    .menu-wrap {
+        display: none;
+    }
+
+} 
+    
+} 
