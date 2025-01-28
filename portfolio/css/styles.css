@@ -81,9 +81,9 @@ header {
     z-index: 1000;
 }
 header h1 {
-    font-size: 1.5rem;
+    font-size: 2rem;
     color: var(--background-color);
-    padding: 1rem;
+    padding-left: 2rem;
 }
 header h1::first-letter {
     color: var(--second-background-color);
@@ -100,7 +100,7 @@ header h1::first-letter {
     display: flex;   
 }
 .myNav li {
-    font-size: 1.35rem;
+    font-size: 1rem;
 }
 .myNav li a {
     padding: 1rem;
