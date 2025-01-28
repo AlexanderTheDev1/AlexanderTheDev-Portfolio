@@ -24,7 +24,6 @@
 }
 img, video, canvas {
     overflow: clip;
-
 } 
 img {
     max-width: 100%
@@ -104,7 +103,7 @@ header .button:hover, header .button:focus {
 header h1 {
     font-size: 1.5rem;
     color: var(--background-color);
-    padding: 1rem;
+    text-align: center;
 }
 header h1::first-letter {
     color: var(--second-background-color);
