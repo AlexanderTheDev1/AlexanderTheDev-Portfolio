@@ -1,4 +1,3 @@
-console.log("Button clicked");
 document.getElementById("menu-toggle").addEventListener("click", function() {
     console.log("Button clicked");
     document.querySelector(".menu-wrap").classList.toggle('menu-active');
