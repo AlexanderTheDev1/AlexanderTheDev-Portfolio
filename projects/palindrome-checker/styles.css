@@ -214,7 +214,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     }
 
 }
-@media screen and (min-width: 60px) and (max-width: 119px){
+@media screen and (min-width: 50px) and (max-width: 119px){
     :root {
         --font-size: 11px;
     }
