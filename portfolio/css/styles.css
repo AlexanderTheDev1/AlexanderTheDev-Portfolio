@@ -206,7 +206,7 @@ header h1::first-letter {
 #about > h2::first-letter {
     color: var(--primary-color);
 }
-img[src="portfolio/assets/images/whitesmoke.logo.webp"] {
+img[src="portfolio/assets/images/logo.webp"] {
   width: 13rem;
   height: 13rem;
   image-rendering: crisp-edges;

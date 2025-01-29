@@ -129,7 +129,7 @@ header h1 {
 header h1::first-letter {
     color: var(--second-background-color);
 }
-img[src*="portfolio/assets/images/ALEXANDER.webp"] {
+img[src*="portfolio/assets/images/logo.webp"] {
     width: 4.375rem;
     height: 4.375rem;
     margin: 0.5rem;
