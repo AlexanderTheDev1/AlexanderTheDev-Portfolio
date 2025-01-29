@@ -112,62 +112,68 @@ header h1 {
 header h1::first-letter {
     color: var(--second-background-color);
 }
-.theme-toggle {
+#tog .theme-toggle {
     background-color: transparent; 
     border: none;  
     color: var(--background-color);
 }
-.myNav .theme-toggle {
+#tog .theme-toggle {
     margin: 1rem;
     padding: 0.5rem 0.7rem;
     border-radius: 20px;
 }
-.myNav .theme-toggle:hover, .myNav .theme-toggle:focus {
+#tog .theme-toggle:hover, #tog .theme-toggle:focus {
     color: var(--second-background-color);
     background-color: var(--button-hover-bg-color);
     border-radius: 20px;
     cursor: pointer;
     outline: 2px solid var(--second-background-color);
 }
-.theme-toggle:hover, .theme-toggle:focus {
+#tog .theme-toggle:hover, #tog .theme-toggle:focus {
     fill: var(---button-hover-bg-color);
     background-color: var(--black);
     color: var(--second-background-color);
 }
 
-.theme-toggle-mob {
+#tog .theme-toggle-mob {
     background-color: transparent; 
     border: none;  
     color: var(--background-color);
 }
-.myNav .theme-toggle-mob {
+#tog .theme-toggle-mob {
     margin: 1rem;
     padding: 0.5rem 0.7rem;
     border-radius: 20px;
 }
-.myNav .theme-toggle-mob:hover, .myNav .theme-toggle-mob:focus {
+#tog .theme-toggle-mob:hover, #tog .theme-toggle-mob:focus {
     color: var(--second-background-color);
     background-color: var(--button-hover-bg-color);
     border-radius: 20px;
     cursor: pointer;
     outline: 2px solid var(--second-background-color);
 }
-.theme-toggle-mob:hover, .theme-toggle-mob:focus {
+#tog .theme-toggle-mob:hover, #tog .theme-toggle-mob:focus {
     fill: var(---button-hover-bg-color);
     background-color: var(--black);
     color: var(--second-background-color);
+}
+#tog {
+    display: flex;   
+}
+#tog button {
+    margin: 1rem;
 }
 /* #endregion */
 /* #region NAV*/
 .myNav {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
     padding: 1rem;
-    align-items: center;   
+    align-items: center; 
 }
 .myNav ul {
     list-style: none;
-    display: flex;   
+    display: flex;     
 }
 .myNav li {
     font-size: 1rem;
@@ -360,10 +366,10 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 14px;
     }
-    .myNav .theme-toggle {
+    .theme-toggle {
         display: none;
     }
-    .myNav .theme-toggle-mob {
+    .theme-toggle-mob {
         display: block;
     }
     .myNav {
@@ -423,10 +429,10 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 15px;
     }
-    .myNav .theme-toggle {
+    .theme-toggle {
         display: none;
     }
-    .myNav .theme-toggle-mob {
+    .theme-toggle-mob {
         display: block;
     }
     .myNav {
@@ -486,10 +492,10 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 16px;
     }
-    .myNav .theme-toggle {
+    .theme-toggle {
         display: none;
     }
-    .myNav .theme-toggle-mob {
+    .theme-toggle-mob {
         display: block;
     }
     .myNav {
@@ -549,10 +555,10 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 17px;
     }
-    .myNav .theme-toggle {
+    .theme-toggle {
         display: block;
     }
-    .myNav .theme-toggle-mob {
+    .theme-toggle-mob {
         display: none;
     }
     #menu-toggle {
@@ -568,10 +574,10 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 18px;
     }
-    .myNav .theme-toggle {
+    .theme-toggle {
         display: block;
     }
-    .myNav .theme-toggle-mob {
+    .theme-toggle-mob {
         display: none;
     }
     #menu-toggle {
@@ -587,10 +593,10 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 20px;
     }
-    .myNav .theme-toggle {
+    .theme-toggle {
         display: block;
     }
-    .myNav .theme-toggle-mob {
+    .theme-toggle-mob {
         display: none;
     }
     #menu-toggle {
@@ -606,10 +612,10 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 13px;
     }
-    .myNav .theme-toggle {
+    .theme-toggle {
         display: none;
     }
-    .myNav .theme-toggle-mob {
+    .theme-toggle-mob {
         display: block;
     }
     .myNav {
@@ -668,10 +674,10 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 11px;
     }
-    .myNav .theme-toggle {
+    .theme-toggle {
         display: none;
     }
-    .myNav .theme-toggle-mob {
+    .theme-toggle-mob {
         display: block;
     }
     .myNav {
@@ -730,10 +736,10 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 8px;
     }
-    .myNav .theme-toggle {
+    .theme-toggle {
         display: none;
     }
-    .myNav .theme-toggle-mob {
+    .theme-toggle-mob {
         display: block;
     }
     .myNav {
@@ -793,10 +799,10 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 5px;
     }
-    .myNav .theme-toggle {
+    .theme-toggle {
         display: none;
     }
-    .myNav .theme-toggle-mob {
+    .theme-toggle-mob {
         display: block;
     }
     .myNav {
@@ -855,10 +861,10 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 3px;
     }
-    .myNav .theme-toggle {
+    .theme-toggle {
         display: none;
     }
-    .myNav .theme-toggle-mob {
+    .theme-toggle-mob {
         display: block;
     }
     .myNav {
