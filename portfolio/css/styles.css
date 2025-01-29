@@ -46,7 +46,8 @@
 img, video, canvas {
     overflow: clip;
 
-} 
+}
+   
 img {
     max-width: 100%
 }
@@ -109,6 +110,51 @@ header h1 {
     padding-left: 2rem;
 }
 header h1::first-letter {
+    color: var(--second-background-color);
+}
+.theme-toggle {
+    background-color: transparent; 
+    border: none;  
+    color: var(--background-color);
+}
+.myNav .theme-toggle {
+    margin: 1rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 20px;
+}
+.myNav .theme-toggle:hover, .myNav .theme-toggle:focus {
+    color: var(--second-background-color);
+    background-color: var(--button-hover-bg-color);
+    border-radius: 20px;
+    cursor: pointer;
+    outline: 2px solid var(--second-background-color);
+}
+.theme-toggle:hover, .theme-toggle:focus {
+    fill: var(---button-hover-bg-color);
+    background-color: var(--black);
+    color: var(--second-background-color);
+}
+
+.theme-toggle-mob {
+    background-color: transparent; 
+    border: none;  
+    color: var(--background-color);
+}
+.myNav .theme-toggle-mob {
+    margin: 1rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 20px;
+}
+.myNav .theme-toggle-mob:hover, .myNav .theme-toggle-mob:focus {
+    color: var(--second-background-color);
+    background-color: var(--button-hover-bg-color);
+    border-radius: 20px;
+    cursor: pointer;
+    outline: 2px solid var(--second-background-color);
+}
+.theme-toggle-mob:hover, .theme-toggle-mob:focus {
+    fill: var(---button-hover-bg-color);
+    background-color: var(--black);
     color: var(--second-background-color);
 }
 /* #endregion */
@@ -314,6 +360,12 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 14px;
     }
+    .myNav .theme-toggle {
+        display: none;
+    }
+    .myNav .theme-toggle-mob {
+        display: block;
+    }
     .myNav {
         display: none;
     }
@@ -370,6 +422,12 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 @media screen and (min-width: 481px) and (max-width: 767px) {
     :root {
         --font-size: 15px;
+    }
+    .myNav .theme-toggle {
+        display: none;
+    }
+    .myNav .theme-toggle-mob {
+        display: block;
     }
     .myNav {
         display: none;
@@ -428,6 +486,12 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 16px;
     }
+    .myNav .theme-toggle {
+        display: none;
+    }
+    .myNav .theme-toggle-mob {
+        display: block;
+    }
     .myNav {
         display: none;
     }
@@ -485,6 +549,12 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 17px;
     }
+    .myNav .theme-toggle {
+        display: block;
+    }
+    .myNav .theme-toggle-mob {
+        display: none;
+    }
     #menu-toggle {
         display: none;
     }
@@ -497,6 +567,12 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 @media screen and (min-width: 1201px) and (max-width: 1440px) {
     :root {
         --font-size: 18px;
+    }
+    .myNav .theme-toggle {
+        display: block;
+    }
+    .myNav .theme-toggle-mob {
+        display: none;
     }
     #menu-toggle {
         display: none;
@@ -511,6 +587,12 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 20px;
     }
+    .myNav .theme-toggle {
+        display: block;
+    }
+    .myNav .theme-toggle-mob {
+        display: none;
+    }
     #menu-toggle {
         display: none;
     }
@@ -523,6 +605,12 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 @media screen and (min-width: 320px) and (max-width: 330px) {
     :root {
         --font-size: 13px;
+    }
+    .myNav .theme-toggle {
+        display: none;
+    }
+    .myNav .theme-toggle-mob {
+        display: block;
     }
     .myNav {
         display: none;
@@ -580,6 +668,12 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 11px;
     }
+    .myNav .theme-toggle {
+        display: none;
+    }
+    .myNav .theme-toggle-mob {
+        display: block;
+    }
     .myNav {
         display: none;
     }
@@ -635,6 +729,12 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 @media screen and (min-width: 120px) and (max-width: 239px) {
     :root {
         --font-size: 8px;
+    }
+    .myNav .theme-toggle {
+        display: none;
+    }
+    .myNav .theme-toggle-mob {
+        display: block;
     }
     .myNav {
         display: none;
@@ -693,6 +793,12 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 5px;
     }
+    .myNav .theme-toggle {
+        display: none;
+    }
+    .myNav .theme-toggle-mob {
+        display: block;
+    }
     .myNav {
         display: none;
     }
@@ -748,6 +854,12 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 @media screen and (min-width: 50px) and (max-width: 80px) {
     :root {
         --font-size: 3px;
+    }
+    .myNav .theme-toggle {
+        display: none;
+    }
+    .myNav .theme-toggle-mob {
+        display: block;
     }
     .myNav {
         display: none;

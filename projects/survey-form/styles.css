@@ -134,6 +134,47 @@ img[src*="portfolio/assets/images/ALEXANDER.webp"] {
     height: 4.375rem;
     margin: 0.5rem;
 }
+#tog {
+    display: flex;
+}
+.theme-toggle {
+    background-color: transparent; 
+    border: none;  
+    color: var(--background-color);
+    margin: 1rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 20px;
+}
+
+.theme-toggle:hover, .theme-toggle:focus {
+    color: var(--second-background-color);
+    background-color: var(--button-hover-bg-color);
+    border-radius: 20px;
+    cursor: pointer;
+    outline: 2px solid var(--second-background-color);
+    fill: var(---button-hover-bg-color);
+    background-color: var(--black);
+    color: var(--second-background-color);
+}
+
+.theme-toggle-mob {
+    background-color: transparent; 
+    border: none;  
+    color: var(--background-color);
+    margin: 1rem;
+    padding: 0.5rem 0.7rem;
+    border-radius: 20px;
+}
+.theme-toggle-mob:hover, .theme-toggle-mob:focus {
+    color: var(--second-background-color);
+    background-color: var(--button-hover-bg-color);
+    border-radius: 20px;
+    cursor: pointer;
+    outline: 2px solid var(--second-background-color);
+    fill: var(---button-hover-bg-color);
+    background-color: var(--black);
+    color: var(--second-background-color);
+}
 /* #endregion */
 /* #region CONTACT*/
 #contact {
@@ -186,37 +227,64 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 /* #endregion */
 /* #region MEDIA */
 /*MEDIA -Extra Small Devices*/
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 331px) and (max-width: 480px) {
     :root {
         --font-size: 14px;
     }
-    
-}
+    .theme-toggle {
+        display: none;
+    }
+    .theme-toggle-mob {
+        display: block;
+    }
+}  
 /*MEDIA -Small Devices*/
 @media screen and (min-width: 481px) and (max-width: 767px) {
     :root {
         --font-size: 15px;
     }
-
-}
+    .theme-toggle {
+        display: none;
+    }
+    .theme-toggle-mob {
+        display: block;
+    }
+}  
 /*MEDIA -Medium Devices*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
     :root {
         --font-size: 16px;
     }
-
-}
+    .theme-toggle {
+        display: none;
+    }
+    .theme-toggle-mob {
+        display: block;
+    }
+    
+}   
 /*MEDIA -Large Devices*/ 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
     :root {
         --font-size: 17px;
     }
-
+    .theme-toggle {
+        display: none;
+    }
+    .theme-toggle-mob {
+        display: block;
+    }
 }
 /*MEDIA -Extra Large Devices*/
-@media screen and (min-width: 1201px) and (max-width: 1440px){
+@media screen and (min-width: 1201px) and (max-width: 1440px) {
     :root {
         --font-size: 18px;
+    }
+    .theme-toggle {
+        display: none;
+    }
+    .theme-toggle-mob {
+        display: block;
     }
 
 } 
@@ -225,35 +293,69 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     :root {
         --font-size: 20px;
     }
+    .theme-toggle {
+        display: none;
+    }
+    .theme-toggle-mob {
+        display: block;
+    }
 
-}
+} 
 /*Just for maximum responsiveness*/
 @media screen and (min-width: 320px) and (max-width: 330px) {
     :root {
         --font-size: 13px;
     }
-}
-@media screen and (min-width: 240px) and (max-width: 319px){
+    .theme-toggle {
+        display: none;
+    }
+    .theme-toggle-mob {
+        display: block;
+    }
+} 
+@media screen and (min-width: 240px) and (max-width: 319px) {
     :root {
         --font-size: 11px;
     }
-}
-@media screen and (min-width: 120px) and (max-width: 239px){
+    .theme-toggle {
+        display: none;
+    }
+    .theme-toggle-mob {
+        display: block;
+    }
+}  
+@media screen and (min-width: 120px) and (max-width: 239px) {
     :root {
         --font-size: 8px;
     }
+    .theme-toggle {
+        display: none;
+    }
+    .theme-toggle-mob {
+        display: block;
+    }
 
 }
-@media screen and (min-width: 81px) and (max-width: 119px){
+@media screen and (min-width: 81px) and (max-width: 119px) {
     :root {
         --font-size: 5px;
     }
-
-} 
-@media screen and (min-width: 50px) and (max-width: 80px){
+    .theme-toggle {
+        display: none;
+    }
+    .theme-toggle-mob {
+        display: block;
+    }
+}
+@media screen and (min-width: 50px) and (max-width: 80px) {
     :root {
         --font-size: 3px;
     }
-
+    .theme-toggle {
+        display: none;
+    }
+    .theme-toggle-mob {
+        display: block;
+    }
 } 
 /* #endregion */ 
