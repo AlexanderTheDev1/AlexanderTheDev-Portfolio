@@ -2,9 +2,9 @@
 /* #region LIGHT THEME */
 :root[data-theme="light"] {
     --primary-color: #0d2b6b;
-    --projects-color: #1a56d7;
+    --projects-color: #0f388f;
     --header-h1: #fbc02d;
-    --secondary-color: #fbc02d; 
+    --secondary-color: #e9a700; 
     --about-h2: #1a56d7;
     --background-color: #f5f5f5; 
     --second-background-color: #fbc02d;
