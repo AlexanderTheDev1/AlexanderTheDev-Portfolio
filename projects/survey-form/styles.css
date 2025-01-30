@@ -152,7 +152,7 @@ img[src*="portfolio/assets/images/logo.webp"] {
     border-radius: 20px;
     cursor: pointer;
     outline: 2px solid var(--second-background-color);
-    fill: var(---button-hover-bg-color);
+    fill: var(--button-hover-bg-color);
     background-color: var(--black);
     color: var(--second-background-color);
 }
@@ -171,7 +171,7 @@ img[src*="portfolio/assets/images/logo.webp"] {
     border-radius: 20px;
     cursor: pointer;
     outline: 2px solid var(--second-background-color);
-    fill: var(---button-hover-bg-color);
+    fill: var(--button-hover-bg-color);
     background-color: var(--black);
     color: var(--second-background-color);
 }

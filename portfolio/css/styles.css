@@ -130,7 +130,7 @@ header h1::first-letter {
     outline: 2px solid var(--second-background-color);
 }
 #tog .theme-toggle:hover, #tog .theme-toggle:focus {
-    fill: var(---button-hover-bg-color);
+    fill: var(--button-hover-bg-color);
     background-color: var(--black);
     color: var(--second-background-color);
 }
@@ -153,7 +153,7 @@ header h1::first-letter {
     outline: 2px solid var(--second-background-color);
 }
 #tog .theme-toggle-mob:hover, #tog .theme-toggle-mob:focus {
-    fill: var(---button-hover-bg-color);
+    fill: var(--button-hover-bg-color);
     background-color: var(--black);
     color: var(--second-background-color);
 }
