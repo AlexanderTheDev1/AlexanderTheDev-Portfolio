@@ -108,6 +108,7 @@ header {
     top: 0;
     z-index: 1000;
     height: 5rem;
+    width: 100%;
 }
 header .button {
     all: unset; 
@@ -130,7 +131,7 @@ header .button:hover, header .button:focus {
     transform: scale(1.1);
 }
 header h1 {
-    font-size: 1.5rem;
+    font-size: 1.4rem;
     color: var(--background-color);
     text-align: center;
 }
@@ -144,35 +145,26 @@ img[src*="portfolio/assets/images/logo.webp"] {
 }
 #tog {
     display: flex;
+    align-items: center; 
+    justify-content: flex-start; 
 }
-.theme-toggle {
+
+.theme-toggle, .theme-toggle-mob {
     background-color: transparent; 
     border: none;  
     color: var(--background-color);
     margin: 1rem;
     padding: 0.5rem 0.7rem;
     border-radius: 20px;
+    min-width: 3rem; 
 }
 
-.theme-toggle:hover, .theme-toggle:focus {
-    color: var(--second-background-color);
-    background-color: var(--button-hover-bg-color);
-    border-radius: 20px;
-    cursor: pointer;
-    outline: 2px solid var(--second-background-color);
-    fill: var(--button-hover-bg-color);
-    background-color: var(--black);
-    color: var(--second-background-color);
+.theme-toggle img, .theme-toggle-mob img {
+    min-width: 1rem;
+    max-width: 100%; 
 }
 
-.theme-toggle-mob {
-    background-color: transparent; 
-    border: none;  
-    color: var(--background-color);
-    margin: 1rem;
-    padding: 0.5rem 0.7rem;
-    border-radius: 20px;
-}
+.theme-toggle:hover, .theme-toggle:focus,
 .theme-toggle-mob:hover, .theme-toggle-mob:focus {
     color: var(--second-background-color);
     background-color: var(--button-hover-bg-color);
@@ -238,8 +230,8 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 /* #region MEDIA */
 /*MEDIA -Extra Small Devices*/
 @media screen and (min-width: 331px) and (max-width: 480px) {
-    :root {
-        --font-size: 14px;
+    :root[data-theme="dark"], :root[data-theme="light"] {
+        --font-size: 10px;
     }
     .theme-toggle {
         display: none;
@@ -250,7 +242,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 }  
 /*MEDIA -Small Devices*/
 @media screen and (min-width: 481px) and (max-width: 767px) {
-    :root {
+    :root[data-theme="dark"], :root[data-theme="light"] {
         --font-size: 15px;
     }
     .theme-toggle {
@@ -262,7 +254,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 }  
 /*MEDIA -Medium Devices*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    :root {
+    :root[data-theme="dark"], :root[data-theme="light"] {
         --font-size: 16px;
     }
     .theme-toggle {
@@ -275,7 +267,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 }   
 /*MEDIA -Large Devices*/ 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    :root {
+    :root[data-theme="dark"], :root[data-theme="light"] {
         --font-size: 17px;
     }
     .theme-toggle {
@@ -287,7 +279,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 }
 /*MEDIA -Extra Large Devices*/
 @media screen and (min-width: 1201px) and (max-width: 1440px) {
-    :root {
+    :root[data-theme="dark"], :root[data-theme="light"] {
         --font-size: 18px;
     }
     .theme-toggle {
@@ -300,7 +292,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 } 
 /*MEDIA -Extra Extra Large Devices*/
 @media screen and (min-width: 1441px) {
-    :root {
+    :root[data-theme="dark"], :root[data-theme="light"] {
         --font-size: 20px;
     }
     .theme-toggle {
@@ -313,8 +305,8 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 } 
 /*Just for maximum responsiveness*/
 @media screen and (min-width: 320px) and (max-width: 330px) {
-    :root {
-        --font-size: 13px;
+    :root[data-theme="dark"], :root[data-theme="light"] {
+        --font-size: 9px;
     }
     .theme-toggle {
         display: none;
@@ -324,8 +316,8 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     }
 } 
 @media screen and (min-width: 240px) and (max-width: 319px) {
-    :root {
-        --font-size: 11px;
+    :root[data-theme="dark"], :root[data-theme="light"] {
+        --font-size: 8px;
     }
     .theme-toggle {
         display: none;
@@ -335,8 +327,8 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     }
 }  
 @media screen and (min-width: 120px) and (max-width: 239px) {
-    :root {
-        --font-size: 8px;
+    :root[data-theme="dark"], :root[data-theme="light"] {
+        --font-size: 6px;
     }
     .theme-toggle {
         display: none;
@@ -347,8 +339,8 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 
 }
 @media screen and (min-width: 81px) and (max-width: 119px) {
-    :root {
-        --font-size: 5px;
+    :root[data-theme="dark"], :root[data-theme="light"] {
+        --font-size: 4px;
     }
     .theme-toggle {
         display: none;
@@ -358,8 +350,8 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     }
 }
 @media screen and (min-width: 50px) and (max-width: 80px) {
-    :root {
-        --font-size: 3px;
+    :root[data-theme="dark"], :root[data-theme="light"] {
+        --font-size: 2px;
     }
     .theme-toggle {
         display: none;
