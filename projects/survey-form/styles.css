@@ -195,9 +195,10 @@ img[src*="portfolio/assets/images/logo.webp"] {
     font-size: 2rem;
     background-color: var(--background);
     text-decoration: underline var(--secondary-color);
+    color: var(--projects-color);
 }
 #contact h4::first-letter {
-    color: var(--primary-color);
+    color: var(--project-first);
 }
 #contact a {
     display: inline-block;
@@ -213,6 +214,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     width: 2.5rem;
     height: 2.5rem;
     border-radius: 20px;
+    image-rendering: crisp-edges;
 }
  #w3c img {
     all: unset;

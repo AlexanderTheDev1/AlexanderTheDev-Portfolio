@@ -164,7 +164,7 @@ header h1::first-letter {
     color: var(--second-background-color);
 }
 #tog {
-    display: flex;   
+    display: flex;
 }
 #tog button {
     margin: 1rem;
@@ -173,13 +173,18 @@ header h1::first-letter {
 /* #region NAV*/
 .myNav {
     display: flex;
-    justify-content: right;
+    justify-content: space-between;
     padding: 1rem;
     align-items: center; 
 }
 .myNav ul {
     list-style: none;
-    display: flex;     
+    display: flex;
+    justify-content: flex-end;
+}
+.merge {
+    display: flex;
+    align-items: center;
 }
 .myNav li {
     font-size: 1rem;

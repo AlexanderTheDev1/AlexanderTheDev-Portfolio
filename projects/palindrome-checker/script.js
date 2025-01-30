@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 const toggle = document.querySelector(".button-change");
 const savedTheme = localStorage.getItem('theme');
 if (savedTheme) {
@@ -12,4 +13,5 @@ toggle.addEventListener('click', () => {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
     }
+});
 });

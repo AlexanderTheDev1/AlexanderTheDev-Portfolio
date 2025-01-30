@@ -1,3 +1,4 @@
+document.addEventListener('DOMContentLoaded', function() {
 document.getElementById("menu-toggle").addEventListener("click", function() {
     console.log("Button clicked");
     document.querySelector(".menu-wrap").classList.toggle('menu-active');
@@ -18,4 +19,5 @@ toggle.addEventListener('click', () => {
         document.documentElement.setAttribute('data-theme', 'light');
         localStorage.setItem('theme', 'light');
     }
-}); 
+});
+});  
