@@ -97,6 +97,12 @@ h1, h2, h3 {
 }
 /* #endregion */
 /* #region HEADER*/
+/* #region FORM*/
+form h1, form label, form legend, form h2, form p, form h4 {
+    color: var(--text-color);
+}
+
+/* #endregion */
 header {
     display: flex; 
     justify-content: space-between;
@@ -136,7 +142,7 @@ header h1 {
     text-align: center;
 }
 header h1::first-letter {
-    color: var(--second-background-color);
+    color: var(--header-h1);
 }
 img[src*="portfolio/assets/images/logo.webp"] {
     width: 4.375rem;

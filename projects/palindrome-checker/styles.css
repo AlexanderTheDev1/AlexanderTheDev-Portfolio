@@ -68,9 +68,7 @@ body {
     font-family: Merriweather, serif;
     background-color: var(--background);
     font-size: 1.15rem;
-    line-height: 2.2rem;   
-  
-    outline: 2px solid red; 
+    line-height: 2.2rem;    
 }
 a {
     text-decoration: none;
@@ -138,7 +136,7 @@ header h1 {
     text-align: center;
 }
 header h1::first-letter {
-    color: var(--second-background-color);
+    color: var(--header-h1);
 }
 img[src*="portfolio/assets/images/logo.webp"] {
     width: 4.375rem;
