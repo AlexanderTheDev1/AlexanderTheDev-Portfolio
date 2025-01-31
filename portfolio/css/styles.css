@@ -411,7 +411,7 @@ header h1::first-letter {
     padding: 0.5rem;
     color: var(--background-color);
     cursor: pointer;
-    width: 15vh;
+    width: 20vh;
     background-color: var(--black);
     border-radius: 10px;
     outline: 2px solid var(--background-color);
