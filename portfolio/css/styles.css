@@ -329,8 +329,8 @@ header h1::first-letter {
     background-color: transparent; 
     border: none;  
     color: var(--background-color);
-    margin: 1.5rem 1rem;
-    padding: 0.5rem 0.7rem;
+    margin: 1.5rem 0.2rem;
+    padding: 0.2rem 0.5rem;
     border-radius: 20px;
 }
 #tog .theme-toggle:hover, #tog .theme-toggle:focus, #tog .theme-toggle-mob:hover, #tog .theme-toggle-mob:focus, #tog .settings:hover, #tog .settings:focus {
@@ -343,6 +343,7 @@ header h1::first-letter {
 }
 #tog {
     display: flex;
+    margin: 0.2rem;
 }
 #tog button {
     margin: 1rem;
@@ -410,7 +411,7 @@ header h1::first-letter {
     padding: 0.5rem;
     color: var(--background-color);
     cursor: pointer;
-    width: 10%;
+    width: 15vh;
     background-color: var(--black);
     border-radius: 10px;
     outline: 2px solid var(--background-color);
