@@ -46,14 +46,35 @@
         --project-first: #000000;
         --font-size: 18px;
     }
-
+    :root[data-theme="default"] {
+        --primary-color: #0d2b6b;
+        --projects-color: #0f388f;
+        --header-h1: #fbc02d;
+        --secondary-color: #e9a700; 
+        --about-h2: #1a56d7;
+        --background-color: #f5f5f5; 
+        --second-background-color: #fbc02d;
+        --text-color: #000000;
+        --link-color: #1a56d7; 
+        --link-color-hover: #1e4887; 
+        --link-visited: #5e7c91;
+        --link-active: #388e3c;
+        --button-bg-color: #1a56d7; 
+        --button-hover-bg-color: #1a2342;
+        --about-a-hover: #f5f5f5;   
+        --hover: #1e4887;
+        --background: #F5F5F5;
+        --black: #212121;
+        --project-first: #000000;
+        --font-size: 18px;
+    }
 :root[data-theme="high-contrast"] {
     --primary-color: #000000;
     --projects-color: #000000;
     --header-h1: #ffcc00;
     --secondary-color: #ffcc00;
     --about-h2: #0000ff;
-    --background-color: #ffffff;
+    --background-color: #f5f5f5;
     --second-background-color: #000000;
     --text-color: #000000;
     --link-color: #0000ff;
@@ -61,10 +82,10 @@
     --link-active: #d32f2f;
     --link-visited: #9c27b0;
     --button-bg-color: #2962ff;
-    --button-hover-bg-color: #ffffff;
+    --button-hover-bg-color: #f5f5f5;
     --about-a-hover: #000000;
     --hover: #ff1744;
-    --background: #ffffff;
+    --background: #f5f5f5;
     --black: #000000;
     --project-first: #0000ff;
     --font-size: 18px;
@@ -207,7 +228,6 @@
     --border-color: #2d3142;
 }  
     /* #endregion */
-    /* #endregion */
     /* #region DARK THEME*/
     :root[data-theme="dark"] {
         --primary-color: #0d2b6b;
@@ -227,6 +247,7 @@
         --hover: #1e4887;
         --background: #131313;
         --black: #212121;
+        --about-a-hover: #f5f5f5;
         --project-first: #eeb012;
         --font-size: 18px;      
  }
@@ -352,6 +373,43 @@ img[src*="portfolio/assets/images/logo.webp"] {
     fill: var(--button-hover-bg-color);
 }
 #tog {
+    display: flex;
+}
+/* #endregion */
+/* #region PANELS*/
+.settings-panel {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--black);
+    width: 100%;
+    padding-bottom: 0.7rem;
+    position: fixed;
+    z-index: 1002;
+}
+.settings-panel button {    
+    text-align: center;     
+    font-size: 1rem;
+    margin: 0.4rem;
+    padding: 0.5rem;
+    color: var(--background-color);
+    cursor: pointer;
+    width: 10%;
+    background-color: var(--black);
+    border-radius: 10px;
+    outline: 2px solid var(--background-color);
+}
+.settings-panel p {
+    text-align: center;
+    padding: 1rem 2rem;
+    color: var(--background-color);
+}
+.settings-panel button:hover, .settings-panel button:focus {
+    color: var(--second-background-color);
+    background-color: var(--button-hover-bg-color);  
+}
+.settings-panel-active {
     display: flex;
 }
 /* #endregion */
