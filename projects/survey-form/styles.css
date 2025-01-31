@@ -335,37 +335,24 @@ img[src*="portfolio/assets/images/logo.webp"] {
     height: 4.375rem;
     margin: 0.5rem;
 }
-#tog {
-    display: flex;
-    align-items: center; 
-    justify-content: flex-start; 
-}
-
-.theme-toggle, .theme-toggle-mob {
+#tog .theme-toggle, #tog .theme-toggle-mob, #tog .settings{
     background-color: transparent; 
     border: none;  
     color: var(--background-color);
-    margin: 1rem;
+    margin: 1.5rem 1rem;
     padding: 0.5rem 0.7rem;
     border-radius: 20px;
-    min-width: 3rem; 
 }
-
-.theme-toggle img, .theme-toggle-mob img {
-    min-width: 1rem;
-    max-width: 100%; 
-}
-
-.theme-toggle:hover, .theme-toggle:focus,
-.theme-toggle-mob:hover, .theme-toggle-mob:focus {
+#tog .theme-toggle:hover, #tog .theme-toggle:focus, #tog .theme-toggle-mob:hover, #tog .theme-toggle-mob:focus, #tog .settings:hover, #tog .settings:focus {
     color: var(--second-background-color);
     background-color: var(--button-hover-bg-color);
     border-radius: 20px;
     cursor: pointer;
     outline: 2px solid var(--second-background-color);
     fill: var(--button-hover-bg-color);
-    background-color: var(--black);
-    color: var(--second-background-color);
+}
+#tog {
+    display: flex;
 }
 /* #endregion */
 /* #region CONTACT*/

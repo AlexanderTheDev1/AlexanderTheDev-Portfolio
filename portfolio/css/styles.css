@@ -303,50 +303,21 @@ header h1 {
 header h1::first-letter {
     color: var(--header-h1);
 }
-#tog .theme-toggle {
+#tog .theme-toggle, #tog .theme-toggle-mob, #tog .settings{
     background-color: transparent; 
     border: none;  
     color: var(--background-color);
-}
-#tog .theme-toggle {
-    margin: 1rem;
+    margin: 1.5rem 1rem;
     padding: 0.5rem 0.7rem;
     border-radius: 20px;
 }
-#tog .theme-toggle:hover, #tog .theme-toggle:focus {
+#tog .theme-toggle:hover, #tog .theme-toggle:focus, #tog .theme-toggle-mob:hover, #tog .theme-toggle-mob:focus, #tog .settings:hover, #tog .settings:focus {
     color: var(--second-background-color);
     background-color: var(--button-hover-bg-color);
     border-radius: 20px;
     cursor: pointer;
     outline: 2px solid var(--second-background-color);
-}
-#tog .theme-toggle:hover, #tog .theme-toggle:focus {
     fill: var(--button-hover-bg-color);
-    background-color: var(--black);
-    color: var(--second-background-color);
-}
-
-#tog .theme-toggle-mob {
-    background-color: transparent; 
-    border: none;  
-    color: var(--background-color);
-}
-#tog .theme-toggle-mob {
-    margin: 1rem;
-    padding: 0.5rem 0.7rem;
-    border-radius: 20px;
-}
-#tog .theme-toggle-mob:hover, #tog .theme-toggle-mob:focus {
-    color: var(--second-background-color);
-    background-color: var(--button-hover-bg-color);
-    border-radius: 20px;
-    cursor: pointer;
-    outline: 2px solid var(--second-background-color);
-}
-#tog .theme-toggle-mob:hover, #tog .theme-toggle-mob:focus {
-    fill: var(--button-hover-bg-color);
-    background-color: var(--black);
-    color: var(--second-background-color);
 }
 #tog {
     display: flex;
