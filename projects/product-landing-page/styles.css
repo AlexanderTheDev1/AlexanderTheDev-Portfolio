@@ -389,7 +389,7 @@ img[src*="portfolio/assets/images/logo.webp"] {
     padding: 0.5rem;
     color: var(--background-color);
     cursor: pointer;
-    width: 10%;
+    width: 25vh;
     background-color: var(--black);
     border-radius: 10px;
     outline: 2px solid var(--background-color);
