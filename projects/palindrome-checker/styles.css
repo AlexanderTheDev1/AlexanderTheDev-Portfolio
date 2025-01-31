@@ -1,26 +1,212 @@
 /* #region GENERAL*/
 /* #region LIGHT THEME */
+/*
 :root[data-theme="light"] {
     --primary-color: #0d2b6b;
     --projects-color: #0f388f;
     --header-h1: #fbc02d;
-    --secondary-color: #fbc02d; 
+    --secondary-color: #e9a700; 
     --about-h2: #1a56d7;
     --background-color: #f5f5f5; 
     --second-background-color: #fbc02d;
-    --text-color: #212121;
+    --text-color: #000000;
     --link-color: #1a56d7; 
     --link-color-hover: #1e4887; 
     --link-visited: #5e7c91;
     --link-active: #388e3c;
     --button-bg-color: #1a56d7; 
     --button-hover-bg-color: #1a2342;
+    --about-a-hover: #f5f5f5;   
     --hover: #1e4887;
     --background: #F5F5F5;
     --black: #212121;
     --project-first: #000000;
     --font-size: 18px;
+    }
+    */
+    :root[data-theme="light"] {
+        --primary-color: #0d2b6b;
+        --projects-color: #0f388f;
+        --header-h1: #fbc02d;
+        --secondary-color: #e9a700; 
+        --about-h2: #1a56d7;
+        --background-color: #f5f5f5; 
+        --second-background-color: #fbc02d;
+        --text-color: #000000;
+        --link-color: #1a56d7; 
+        --link-color-hover: #1e4887; 
+        --link-visited: #5e7c91;
+        --link-active: #388e3c;
+        --button-bg-color: #1a56d7; 
+        --button-hover-bg-color: #1a2342;
+        --about-a-hover: #f5f5f5;   
+        --hover: #1e4887;
+        --background: #F5F5F5;
+        --black: #212121;
+        --project-first: #000000;
+        --font-size: 18px;
+    }
+
+:root[data-theme="high-contrast"] {
+    --primary-color: #000000;
+    --projects-color: #000000;
+    --header-h1: #ffcc00;
+    --secondary-color: #ffcc00;
+    --about-h2: #0000ff;
+    --background-color: #ffffff;
+    --second-background-color: #000000;
+    --text-color: #000000;
+    --link-color: #0000ff;
+    --link-color-hover: #b71c1c;
+    --link-active: #d32f2f;
+    --link-visited: #9c27b0;
+    --button-bg-color: #2962ff;
+    --button-hover-bg-color: #ffffff;
+    --about-a-hover: #000000;
+    --hover: #ff1744;
+    --background: #ffffff;
+    --black: #000000;
+    --project-first: #0000ff;
+    --font-size: 18px;
 }
+:root[data-theme="greyscale"] {
+        --primary-color: #4f4f4f;
+        --projects-color: #3d3d3d;
+        --header-h1: #000000;
+        --secondary-color: #757575;
+        --about-h2: #636363;
+        --background-color: #e0e0e0;
+        --second-background-color: #ffffff;
+        --text-color: #000000;
+        --link-color: #636363;
+        --link-color-hover: #424242;
+        --link-visited: #5e5e5e;
+        --link-active: #757575;
+        --button-bg-color: #636363;
+        --button-hover-bg-color: #000000;
+        --about-a-hover: #e0e0e0;
+        --hover: #424242;
+        --background: #e0e0e0;
+        --black: #212121;
+        --project-first: #000000;
+        --font-size: 18px;
+    }    
+:root[data-theme="deuteranopia"] {
+    --primary-color: #045e8f; 
+    --projects-color: #0f388f;
+    --header-h1: #fbc02d;
+    --secondary-color: #ff934f; 
+    --about-h2: #1a56d7;
+    --background-color: #ffffff; 
+    --second-background-color: #fcb78d; 
+    --text-color: #000000;
+    --link-color: #058ed9; 
+    --link-color-hover: #1a237e;
+    --link-visited: #cc2d35; 
+    --link-active: #fcb78d; 
+    --button-bg-color: #058ed9; 
+    --button-hover-bg-color: #2d3142; 
+    --about-a-hover: #f5f5f5;
+    --hover: #2d3142; 
+    --background: #e1daae;
+    --black: #212121; 
+    --project-first: #000000; 
+    --font-size: 18px;
+    --border-color: #2d3142;
+}
+:root[data-theme="protanopia"] {
+    --primary-color: #235fa4;
+        --projects-color: #000000;
+        --header-h1: #fbc02d;
+        --secondary-color: #e9a700;
+        --about-h2: #1a56d7;
+        --background-color: #f6ff8f;
+        --second-background-color: #dcbae9;
+        --text-color: #000000;
+        --link-color: #1a56d7;
+        --link-color-hover: #2980b9;
+        --link-visited: #a691ae;
+        --link-active: #f1c40f;
+        --button-bg-color: #1a56d7;
+        --button-hover-bg-color: #1a2342;
+        --about-a-hover: #f5f5f5;
+        --hover: #3498db;
+        --background: #f5f5f5;
+        --black: #000000;
+        --project-first: #000000;
+        --font-size: 18px;
+        --border-color: #2d3142;
+}
+:root[data-theme="achromatomaly"] {
+    --primary-color: #2d4f63;
+    --projects-color: #695545;
+    --header-h1: #fbc02d;
+    --secondary-color: #e9a700;
+    --about-h2: #2d4f63;
+    --background-color: #fffbe4;
+    --second-background-color: #fc898c;
+    --text-color: #212121;
+    --link-color: #2d4f63;
+    --link-color-hover: #854a4c;
+    --link-visited: #caa386;
+    --link-active: #2d4f63;
+    --button-bg-color: #2d4f63;
+    --button-hover-bg-color: #232327;
+    --about-a-hover: #f5f5f5;
+    --hover: #854a4c;
+    --background: #f5f5f5;
+    --black: #000000;
+    --project-first: #000000;
+    --font-size: 18px;
+    --border-color: #2d3142;
+}
+:root[data-theme="tritanopia"] {
+    --primary-color: #2d676f;
+        --projects-color: #9b5050;
+        --header-h1: #fbc02d;
+        --secondary-color: #e9a700;
+        --about-h2: #2d676f;
+        --background-color: #ffdcdc;
+        --second-background-color: #ff5050;
+        --text-color: #212121;
+        --link-color: #2d676f;
+        --link-color-hover: #f48080;
+        --link-visited: #fd4f4f;
+        --link-active: #f48080;
+        --button-bg-color: #2d676f;
+        --button-hover-bg-color: #071516;
+        --about-a-hover: #f5f5f5;
+        --hover: #f48080;
+        --background: #f5f5f5;
+        --black: #000000;
+        --project-first: #000000;
+        --font-size: 18px;
+        --border-color: #2d3142;
+}  
+:root[data-theme="monochromacy"] {
+    --primary-color: #6d4f57; 
+    --projects-color: #75535d;
+    --header-h1: #fbc02d;
+    --secondary-color: #563e45;
+    --about-h2: #4b363c;
+    --background-color: #f5f5f5;
+    --second-background-color: #402e33;
+    --text-color: #212121;
+    --link-color: #6d4f57;
+    --link-color-hover: #62464e;
+    --link-visited: #563e45;
+    --link-active: #4b363c;
+    --button-bg-color: #6d4f57;
+    --button-hover-bg-color: #faafc4;
+    --about-a-hover: #463237;
+    --hover: #62464e;
+    --background: #f5f5f5;
+    --black: #000000;
+    --project-first: #000000;
+    --font-size: 18px;
+    --border-color: #2d3142;
+}  
+    /* #endregion */
     /* #endregion */
     /* #region DARK THEME*/
     :root[data-theme="dark"] {
