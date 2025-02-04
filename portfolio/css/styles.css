@@ -20,7 +20,6 @@
         --background: #F5F5F5;
         --black: #212121;
         --project-first: #000000;
-        --font-size: 18px;
     }
     :root[data-theme="default"] {
         --primary-color: #0d2b6b;
@@ -42,7 +41,6 @@
         --background: #F5F5F5;
         --black: #212121;
         --project-first: #000000;
-        --font-size: 18px;
     }
 :root[data-theme="high-contrast"] {
     --primary-color: #000000;
@@ -64,7 +62,6 @@
     --background: #f5f5f5;
     --black: #000000;
     --project-first: #0000ff;
-    --font-size: 18px;
 }
 :root[data-theme="greyscale"] {
         --primary-color: #4f4f4f;
@@ -86,7 +83,6 @@
         --background: #e0e0e0;
         --black: #212121;
         --project-first: #000000;
-        --font-size: 18px;
     }    
 :root[data-theme="deuteranopia"] {
     --primary-color: #045e8f; 
@@ -108,7 +104,6 @@
     --background: #e1daae;
     --black: #212121; 
     --project-first: #000000; 
-    --font-size: 18px;
     --border-color: #2d3142;
 }
 :root[data-theme="protanopia"] {
@@ -131,7 +126,6 @@
         --background: #f5f5f5;
         --black: #000000;
         --project-first: #000000;
-        --font-size: 18px;
         --border-color: #2d3142;
 }
 :root[data-theme="achromatomaly"] {
@@ -154,7 +148,6 @@
     --background: #f5f5f5;
     --black: #000000;
     --project-first: #000000;
-    --font-size: 18px;
     --border-color: #2d3142;
 }
 :root[data-theme="tritanopia"] {
@@ -177,7 +170,6 @@
         --background: #f5f5f5;
         --black: #000000;
         --project-first: #000000;
-        --font-size: 18px;
         --border-color: #2d3142;
 }  
 :root[data-theme="monochromacy"] {
@@ -200,7 +192,6 @@
     --background: #f5f5f5;
     --black: #000000;
     --project-first: #000000;
-    --font-size: 18px;
     --border-color: #2d3142;
 }  
     /* #endregion */
@@ -234,6 +225,9 @@
     padding: 0;
     box-sizing: border-box;
 }
+*, *::before, *::after {
+    box-sizing: border-box;
+  }
 img, video, canvas {
     overflow: clip !important;
 
@@ -285,18 +279,18 @@ h1, h2, h3 {
 header {
     display: flex; 
     justify-content: space-between;
-    padding: 0.9rem; 
+    padding: 1rem; 
     background-color: var(--primary-color);
     position: sticky;
-    transition: top 0.5s;
     top: 0;
     z-index: 1000;
     height: 5rem;
+    transition: none !important;
+    will-change: transform;
 }
 header h1 {
     font-size: 2rem;
     color: var(--background-color);
-    padding-left: 2rem;
 }
 header h1::first-letter {
     color: var(--header-h1);
@@ -575,7 +569,11 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 /* #region MEDIA*/
 /*MEDIA -Extra Small Devices*/
 @media screen and (min-width: 331px) and (max-width: 480px) {
-    :root[data-theme="dark"], :root[data-theme="light"] {
+    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="default"], :root[data-theme="high-contrast"],
+    :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
+    :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
+    :root[data-theme="tritanopia"], :root[data-theme="monochromacy"] {
         --font-size: 14px;
     }
     .theme-toggle {
@@ -635,10 +633,14 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     #ham-menu a {
         color: var(--background-color);
     }
-}  
+} 
 /*MEDIA -Small Devices*/
 @media screen and (min-width: 481px) and (max-width: 767px) {
-    :root[data-theme="dark"], :root[data-theme="light"] {
+    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="default"], :root[data-theme="high-contrast"],
+    :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
+    :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
+    :root[data-theme="tritanopia"], :root[data-theme="monochromacy"] {
         --font-size: 15px;
     }
     .theme-toggle {
@@ -701,7 +703,11 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 }  
 /*MEDIA -Medium Devices*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    :root[data-theme="dark"], :root[data-theme="light"] {
+    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="default"], :root[data-theme="high-contrast"],
+    :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
+    :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
+    :root[data-theme="tritanopia"], :root[data-theme="monochromacy"] {
         --font-size: 16px;
     }
     .theme-toggle {
@@ -764,7 +770,11 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 }  
 /*MEDIA -Large Devices*/ 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    :root[data-theme="dark"], :root[data-theme="light"] {
+    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="default"], :root[data-theme="high-contrast"],
+    :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
+    :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
+    :root[data-theme="tritanopia"], :root[data-theme="monochromacy"] {
         --font-size: 17px;
     }
     .theme-toggle {
@@ -783,7 +793,11 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 }
 /*MEDIA -Extra Large Devices*/
 @media screen and (min-width: 1201px) and (max-width: 1440px) {
-    :root[data-theme="dark"], :root[data-theme="light"] {
+    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="default"], :root[data-theme="high-contrast"],
+    :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
+    :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
+    :root[data-theme="tritanopia"], :root[data-theme="monochromacy"] {
         --font-size: 18px;
     }
     .theme-toggle {
@@ -802,7 +816,11 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 } 
 /*MEDIA -Extra Extra Large Devices*/
 @media screen and (min-width: 1441px) {
-    :root[data-theme="dark"], :root[data-theme="light"] {
+    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="default"], :root[data-theme="high-contrast"],
+    :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
+    :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
+    :root[data-theme="tritanopia"], :root[data-theme="monochromacy"] {
         --font-size: 20px;
     }
     .theme-toggle {
@@ -821,8 +839,12 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 } 
 /*Just for maximum responsiveness*/
 @media screen and (min-width: 320px) and (max-width: 330px) {
-    :root[data-theme="dark"], :root[data-theme="light"] {
-        --font-size: 13px;
+    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="default"], :root[data-theme="high-contrast"],
+    :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
+    :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
+    :root[data-theme="tritanopia"], :root[data-theme="monochromacy"] {
+        --font-size: 12px;
     }
     .theme-toggle {
         display: none;
@@ -883,8 +905,12 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     }
 } 
 @media screen and (min-width: 240px) and (max-width: 319px) {
-    :root[data-theme="dark"], :root[data-theme="light"] {
-        --font-size: 11px;
+    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="default"], :root[data-theme="high-contrast"],
+    :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
+    :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
+    :root[data-theme="tritanopia"], :root[data-theme="monochromacy"] {
+        --font-size: 10px;
     }
     .theme-toggle {
         display: none;
@@ -945,7 +971,11 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     }
 }  
 @media screen and (min-width: 120px) and (max-width: 239px) {
-    :root[data-theme="dark"], :root[data-theme="light"] {
+    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="default"], :root[data-theme="high-contrast"],
+    :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
+    :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
+    :root[data-theme="tritanopia"], :root[data-theme="monochromacy"] {
         --font-size: 8px;
     }
     .theme-toggle {
@@ -1008,7 +1038,11 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 
 }
 @media screen and (min-width: 81px) and (max-width: 119px) {
-    :root[data-theme="dark"], :root[data-theme="light"] {
+    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="default"], :root[data-theme="high-contrast"],
+    :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
+    :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
+    :root[data-theme="tritanopia"], :root[data-theme="monochromacy"] {
         --font-size: 5px;
     }
     .theme-toggle {
@@ -1070,7 +1104,11 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     }
 }
 @media screen and (min-width: 50px) and (max-width: 80px) {
-    :root[data-theme="dark"], :root[data-theme="light"] {
+    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="default"], :root[data-theme="high-contrast"],
+    :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
+    :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
+    :root[data-theme="tritanopia"], :root[data-theme="monochromacy"] {
         --font-size: 3px;
     }
     .theme-toggle {
