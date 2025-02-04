@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function() {
-console.log("Universal 1rst Script.js is loaded!");
+    console.log("Universal 1rst Script.js is loaded!");
     const toggleButtons = document.querySelectorAll(".button-change");
     const savedTheme = localStorage.getItem('theme');
     if (savedTheme) {
@@ -7,6 +7,10 @@ console.log("Universal 1rst Script.js is loaded!");
     }
     toggleButtons.forEach(toggle => {
         toggle.addEventListener('click', () => {
+            document.querySelector(".settings-panel").classList.remove('settings-panel-active');
+            document.querySelector(".menu-wrap").classList.remove('menu-active');
+            document.querySelector("#ham-menu").classList.remove('ham-menu2');
+            document.querySelector("#menu-toggle").classList.remove('menu-rotated');
             let currentTheme = document.documentElement.getAttribute('data-theme');
             if (currentTheme === 'default') {
                 document.documentElement.setAttribute('data-theme', 'dark');
@@ -21,6 +25,9 @@ console.log("Universal 1rst Script.js is loaded!");
     document.querySelector(".settings").addEventListener('click', function() {
         console.log("Button clicked");
         document.querySelector('.settings-panel').classList.toggle('settings-panel-active');
+        document.querySelector(".menu-wrap").classList.remove('menu-active');
+        document.querySelector("#ham-menu").classList.remove('ham-menu2');
+        document.querySelector("#menu-toggle").classList.remove('menu-rotated');        
     });
     
     console.log("Universal 2nd Script.js is loaded!");

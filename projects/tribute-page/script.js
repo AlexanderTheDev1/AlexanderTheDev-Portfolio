@@ -1,27 +1,34 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log("Universal 1rst Script.js is loaded!");
-        const toggleButtons = document.querySelectorAll(".button-change");
-        const savedTheme = localStorage.getItem('theme');
-        if (savedTheme) {
-            document.documentElement.setAttribute('data-theme', savedTheme);
-        }
-        toggleButtons.forEach(toggle => {
-            toggle.addEventListener('click', () => {
-                let currentTheme = document.documentElement.getAttribute('data-theme');
-                if (currentTheme === 'default') {
-                    document.documentElement.setAttribute('data-theme', 'dark');
-                    localStorage.setItem('theme', 'dark');
-                } else if (currentTheme === 'dark') {
-                    document.documentElement.setAttribute('data-theme', 'default');
-                    localStorage.setItem('theme', 'default');
-                }  
-                console.log('toggle'); 
-            });
+    const toggleButtons = document.querySelectorAll(".button-change");
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme) {
+        document.documentElement.setAttribute('data-theme', savedTheme);
+    }
+    toggleButtons.forEach(toggle => {
+        toggle.addEventListener('click', () => {
+            document.querySelector(".settings-panel").classList.remove('settings-panel-active');
+            document.querySelector(".menu-wrap").classList.remove('menu-active');
+            document.querySelector("#ham-menu").classList.remove('ham-menu2');
+            document.querySelector("#menu-toggle").classList.remove('menu-rotated');
+            let currentTheme = document.documentElement.getAttribute('data-theme');
+            if (currentTheme === 'default') {
+                document.documentElement.setAttribute('data-theme', 'dark');
+                localStorage.setItem('theme', 'dark');
+            } else if (currentTheme === 'dark') {
+                document.documentElement.setAttribute('data-theme', 'default');
+                localStorage.setItem('theme', 'default');
+            } 
+            console.log('toggle'); 
         });
-        document.querySelector(".settings").addEventListener('click', function() {
-            console.log("Button clicked");
-            document.querySelector('.settings-panel').classList.toggle('settings-panel-active');
-        });
+    });
+    document.querySelector(".settings").addEventListener('click', function() {
+        console.log("Button clicked");
+        document.querySelector('.settings-panel').classList.toggle('settings-panel-active');
+        document.querySelector(".menu-wrap").classList.remove('menu-active');
+        document.querySelector("#ham-menu").classList.remove('ham-menu2');
+        document.querySelector("#menu-toggle").classList.remove('menu-rotated');        
+    });
         
         console.log("Universal 2nd Script.js is loaded!");
         const toggleDefault = document.querySelector('.default');
