@@ -291,6 +291,7 @@ header {
 header h1 {
     font-size: 2rem;
     color: var(--background-color);
+    padding-left: 1rem;
 }
 header h1::first-letter {
     color: var(--header-h1);
@@ -299,7 +300,7 @@ header h1::first-letter {
     background-color: transparent; 
     border: none;  
     color: var(--background-color);
-    margin: 1.5rem 0.2rem;
+    margin: 1.5rem 0.5rem;
     padding: 0.2rem 0.5rem;
     border-radius: 20px;
 }
@@ -313,10 +314,7 @@ header h1::first-letter {
 }
 #tog {
     display: flex;
-    margin: 0.2rem;
-}
-#tog button {
-    margin: 1rem;
+    margin: 0.5rem;
 }
 /* #endregion */
 /* #region NAV*/
@@ -337,6 +335,7 @@ header h1::first-letter {
 }
 .myNav li {
     font-size: 1rem;
+    margin: 0.2rem;
 }
 .myNav li a {
     padding: 1rem;
