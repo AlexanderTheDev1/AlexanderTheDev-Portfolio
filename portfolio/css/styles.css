@@ -340,8 +340,13 @@ header h1::first-letter {
 /* #endregion */
 /* #region PANELS*/
 #ham-menu {
-    text-align: right; 
-    z-index: 1002;
+    padding-right: 0.5rem;
+}
+#ham-menu li {
+    text-align: right;
+}
+.menu-wrap {
+    z-index: 1002;  
 }
 #ham-menu span {
     color: var(--background-color);
