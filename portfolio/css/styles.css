@@ -1,29 +1,5 @@
 /* #region GENERAL */
-/* #region LIGHT THEME */
-/*
-:root[data-theme="light"] {
-    --primary-color: #0d2b6b;
-    --projects-color: #0f388f;
-    --header-h1: #fbc02d;
-    --secondary-color: #e9a700; 
-    --about-h2: #1a56d7;
-    --background-color: #f5f5f5; 
-    --second-background-color: #fbc02d;
-    --text-color: #000000;
-    --link-color: #1a56d7; 
-    --link-color-hover: #1e4887; 
-    --link-visited: #5e7c91;
-    --link-active: #388e3c;
-    --button-bg-color: #1a56d7; 
-    --button-hover-bg-color: #1a2342;
-    --about-a-hover: #f5f5f5;   
-    --hover: #1e4887;
-    --background: #F5F5F5;
-    --black: #212121;
-    --project-first: #000000;
-    --font-size: 18px;
-    }
-    */
+/* #region LIGHT THEME */        
     :root[data-theme="light"] {
         --primary-color: #0d2b6b;
         --projects-color: #0f388f;
