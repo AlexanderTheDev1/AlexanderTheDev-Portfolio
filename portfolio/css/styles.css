@@ -1,26 +1,5 @@
 /* #region GENERAL */
 /* #region LIGHT THEME */        
-    :root[data-theme="light"] {
-        --primary-color: #0d2b6b;
-        --projects-color: #0f388f;
-        --header-h1: #fbc02d;
-        --secondary-color: #e9a700; 
-        --about-h2: #1a56d7;
-        --background-color: #f5f5f5; 
-        --second-background-color: #fbc02d;
-        --text-color: #000000;
-        --link-color: #1a56d7; 
-        --link-color-hover: #1e4887; 
-        --link-visited: #5e7c91;
-        --link-active: #388e3c;
-        --button-bg-color: #1a56d7; 
-        --button-hover-bg-color: #1a2342;
-        --about-a-hover: #f5f5f5;   
-        --hover: #1e4887;
-        --background: #F5F5F5;
-        --black: #212121;
-        --project-first: #000000;
-    }
     :root[data-theme="default"] {
         --primary-color: #0d2b6b;
         --projects-color: #0f388f;
@@ -35,7 +14,7 @@
         --link-visited: #5e7c91;
         --link-active: #388e3c;
         --button-bg-color: #1a56d7; 
-        --button-hover-bg-color: #1a2342;
+        --button-hover-bg-color: #000000;
         --about-a-hover: #f5f5f5;   
         --hover: #1e4887;
         --background: #F5F5F5;
@@ -49,14 +28,14 @@
     --secondary-color: #ffcc00;
     --about-h2: #0000ff;
     --background-color: #f5f5f5;
-    --second-background-color: #000000;
+    --second-background-color: #ffcc00;
     --text-color: #000000;
     --link-color: #0000ff;
     --link-color-hover: #b71c1c;
     --link-active: #d32f2f;
     --link-visited: #9c27b0;
     --button-bg-color: #2962ff;
-    --button-hover-bg-color: #f5f5f5;
+    --button-hover-bg-color: #000000;
     --about-a-hover: #000000;
     --hover: #ff1744;
     --background: #f5f5f5;
@@ -285,8 +264,6 @@ header {
     top: 0;
     z-index: 1000;
     height: 5rem;
-    transition: none !important;
-    will-change: transform;
 }
 header h1 {
     font-size: 2rem;
@@ -301,7 +278,7 @@ header h1::first-letter {
     border: none;  
     color: var(--background-color);
     margin: 1.5rem 0.5rem;
-    padding: 0.2rem 0.5rem;
+    padding: 0.2rem 0.4rem;
     border-radius: 20px;
 }
 #tog .theme-toggle:hover, #tog .theme-toggle:focus, #tog .theme-toggle-mob:hover, #tog .theme-toggle-mob:focus, #tog .settings:hover, #tog .settings:focus {
@@ -568,7 +545,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 /* #region MEDIA*/
 /*MEDIA -Extra Small Devices*/
 @media screen and (min-width: 331px) and (max-width: 480px) {
-    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="dark"],
     :root[data-theme="default"], :root[data-theme="high-contrast"],
     :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
     :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
@@ -635,7 +612,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 } 
 /*MEDIA -Small Devices*/
 @media screen and (min-width: 481px) and (max-width: 767px) {
-    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="dark"],
     :root[data-theme="default"], :root[data-theme="high-contrast"],
     :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
     :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
@@ -702,7 +679,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 }  
 /*MEDIA -Medium Devices*/
 @media screen and (min-width: 768px) and (max-width: 1024px) {
-    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="dark"],
     :root[data-theme="default"], :root[data-theme="high-contrast"],
     :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
     :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
@@ -769,7 +746,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 }  
 /*MEDIA -Large Devices*/ 
 @media screen and (min-width: 1025px) and (max-width: 1200px) {
-    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="dark"],
     :root[data-theme="default"], :root[data-theme="high-contrast"],
     :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
     :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
@@ -792,7 +769,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 }
 /*MEDIA -Extra Large Devices*/
 @media screen and (min-width: 1201px) and (max-width: 1440px) {
-    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="dark"],
     :root[data-theme="default"], :root[data-theme="high-contrast"],
     :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
     :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
@@ -815,7 +792,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 } 
 /*MEDIA -Extra Extra Large Devices*/
 @media screen and (min-width: 1441px) {
-    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="dark"],
     :root[data-theme="default"], :root[data-theme="high-contrast"],
     :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
     :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
@@ -838,7 +815,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 } 
 /*Just for maximum responsiveness*/
 @media screen and (min-width: 320px) and (max-width: 330px) {
-    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="dark"],
     :root[data-theme="default"], :root[data-theme="high-contrast"],
     :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
     :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
@@ -904,7 +881,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     }
 } 
 @media screen and (min-width: 240px) and (max-width: 319px) {
-    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="dark"],
     :root[data-theme="default"], :root[data-theme="high-contrast"],
     :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
     :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
@@ -970,7 +947,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     }
 }  
 @media screen and (min-width: 120px) and (max-width: 239px) {
-    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="dark"],
     :root[data-theme="default"], :root[data-theme="high-contrast"],
     :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
     :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
@@ -1037,7 +1014,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 
 }
 @media screen and (min-width: 81px) and (max-width: 119px) {
-    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="dark"],
     :root[data-theme="default"], :root[data-theme="high-contrast"],
     :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
     :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],
@@ -1103,7 +1080,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     }
 }
 @media screen and (min-width: 50px) and (max-width: 80px) {
-    :root[data-theme="dark"], :root[data-theme="light"],
+    :root[data-theme="dark"],
     :root[data-theme="default"], :root[data-theme="high-contrast"],
     :root[data-theme="greyscale"], :root[data-theme="deuteranopia"],
     :root[data-theme="protanopia"], :root[data-theme="achromatomaly"],

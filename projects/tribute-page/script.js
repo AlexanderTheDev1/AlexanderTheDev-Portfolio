@@ -8,13 +8,13 @@ document.addEventListener('DOMContentLoaded', function() {
         toggleButtons.forEach(toggle => {
             toggle.addEventListener('click', () => {
                 let currentTheme = document.documentElement.getAttribute('data-theme');
-                if (currentTheme === 'light' || currentTheme === 'default') {
+                if (currentTheme === 'default') {
                     document.documentElement.setAttribute('data-theme', 'dark');
                     localStorage.setItem('theme', 'dark');
                 } else if (currentTheme === 'dark') {
-                    document.documentElement.setAttribute('data-theme', 'light');
-                    localStorage.setItem('theme', 'light');
-                } 
+                    document.documentElement.setAttribute('data-theme', 'default');
+                    localStorage.setItem('theme', 'default');
+                }  
                 console.log('toggle'); 
             });
         });
