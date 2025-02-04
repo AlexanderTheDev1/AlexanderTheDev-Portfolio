@@ -40,7 +40,7 @@ document.addEventListener('DOMContentLoaded', function() {
         
         toggleDefault.addEventListener('click', () => {
             currentTheme = document.documentElement.getAttribute('data-theme');
-            if (currentTheme != 'light' && currentTheme != 'default') {
+            if (currentTheme != 'default') {
                 document.documentElement.setAttribute('data-theme', 'default');
                 localStorage.setItem('theme', 'default');
             } 
