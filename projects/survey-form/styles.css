@@ -325,6 +325,22 @@ img[src*="portfolio/assets/images/logo.webp"] {
     display: flex;
     margin: 0.5rem;
 }
+#breadcrumb {
+    display: flex;
+    justify-content: left;
+    color: var(--background);
+}
+#breadcrumb a {
+    color: var(--background-color);
+    padding: 0.4rem;
+    
+}
+#breadcrumb p {
+    color: var(--background-color);  
+}
+#breadcrumb a:hover,  #breadcrumb a:focus {
+    color: var(--second-background-color);
+}   
 /* #endregion */
 /* #region PANELS*/
 .settings-panel {
