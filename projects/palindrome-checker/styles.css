@@ -428,6 +428,30 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
     outline: 4px solid var(--secondary-color);
 }
 /* #endregion */
+/* #region KEYFRAMES*/
+@keyframes scale-up {
+    from {
+
+        transform: scaleX(0);
+    }
+    to {
+        transform: scaleX(1);
+    }
+}
+
+#progress-bar {
+    position: sticky;
+    background-color: var(--secondary-color);
+    left: 0;
+    top: 5rem;
+    z-index: 4;
+    height: 0.7rem;
+    width: 100%;
+    transform-origin: 0-50%;
+    animation: auto linear scale-up;
+    animation-timeline: scroll();
+}
+/* #endregion */
 /* #region MEDIA */
 /*MEDIA -Extra Small Devices*/
 @media screen and (min-width: 331px) and (max-width: 480px) {
