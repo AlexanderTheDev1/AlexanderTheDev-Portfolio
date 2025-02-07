@@ -349,6 +349,8 @@ img[src*="portfolio/assets/images/logo.webp"] {
     padding-bottom: 0.7rem;
     position: fixed;
     z-index: 1002;
+    top: 0;
+    padding: 2rem;
 }
 .settings-panel button {    
     text-align: center;     

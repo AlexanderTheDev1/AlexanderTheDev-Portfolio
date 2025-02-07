@@ -361,6 +361,8 @@ header h1::first-letter {
     padding-bottom: 0.7rem;
     position: fixed;
     z-index: 1002;
+    top: 0;
+    padding: 2rem;
 }
 .settings-panel button {    
     text-align: center;     
@@ -565,11 +567,11 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 }
 
 #progress-bar {
-    background: var(--secondary-color);
     position: sticky;
+    background: var(--secondary-color);
     left: 0;
     top: 5rem;
-    z-index: 1002;
+    z-index: 1004;
     height: 0.7rem;
     width: 100%;
     transform-origin: 0-50%;
