@@ -8,9 +8,6 @@ document.addEventListener('DOMContentLoaded', function() {
     toggleButtons.forEach(toggle => {
         toggle.addEventListener('click', () => {
             document.querySelector(".settings-panel").classList.remove('settings-panel-active');
-            document.querySelector(".menu-wrap").classList.remove('menu-active');
-            document.querySelector("#ham-menu").classList.remove('ham-menu2');
-            document.querySelector("#menu-toggle").classList.remove('menu-rotated');
             let currentTheme = document.documentElement.getAttribute('data-theme');
             if (currentTheme === 'default') {
                 document.documentElement.setAttribute('data-theme', 'dark');
@@ -24,10 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
     });
     document.querySelector(".settings").addEventListener('click', function() {
         console.log("Button clicked");
-        document.querySelector('.settings-panel').classList.toggle('settings-panel-active');
-        document.querySelector(".menu-wrap").classList.remove('menu-active');
-        document.querySelector("#ham-menu").classList.remove('ham-menu2');
-        document.querySelector("#menu-toggle").classList.remove('menu-rotated');        
+        document.querySelector('.settings-panel').classList.toggle('settings-panel-active');      
     });
         
         console.log("Universal 2nd Script.js is loaded!");
