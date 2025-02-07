@@ -202,6 +202,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    outline: 2px solid red;
 }
 img, video, canvas {
     overflow: clip;
@@ -278,7 +279,7 @@ header .button {
     color: var(--background-color);
     text-decoration: none;
     border-radius: 25px;
-    padding: 0.6rem;
+    padding: 0.3rem;
     font-size: 1.1rem;
     margin: 0.5rem;
     background-color: var(--primary-color);
@@ -329,17 +330,19 @@ img[src*="portfolio/assets/images/logo.webp"] {
     display: flex;
     justify-content: left;
     color: var(--background);
+    margin: 0.2rem;
+    padding: 0.2rem;
 }
-#breadcrumb a {
-    color: var(--background-color);
-    padding: 0.4rem;
-    
+#breadcrumb .link, #breadcrumb .link-p {
+    color: var(--text-color);
+    margin: 0.2rem;
+    padding: 0.3rem;
 }
-#breadcrumb p {
-    color: var(--background-color);  
+#breadcrumb .link-p {
+    padding: 0;
 }
 #breadcrumb a:hover,  #breadcrumb a:focus {
-    color: var(--second-background-color);
+    color: var(--secondary-color);
 }   
 /* #endregion */
 /* #region PANELS*/

@@ -272,7 +272,7 @@ header .button {
     color: var(--background-color);
     text-decoration: none;
     border-radius: 25px;
-    padding: 0.6rem;
+    padding: 0.3rem;
     font-size: 1.1rem;
     margin: 0.5rem;
     background-color: var(--primary-color);
@@ -319,6 +319,24 @@ img[src*="portfolio/assets/images/logo.webp"] {
     display: flex;
     margin: 0.5rem;
 }
+#breadcrumb {
+    display: flex;
+    justify-content: left;
+    color: var(--background);
+    margin: 0.2rem;
+    padding: 0.2rem;
+}
+#breadcrumb .link, #breadcrumb .link-p {
+    color: var(--text-color);
+    margin: 0.2rem;
+    padding: 0.3rem;
+}
+#breadcrumb .link-p {
+    padding: 0;
+}
+#breadcrumb a:hover,  #breadcrumb a:focus {
+    color: var(--secondary-color);
+}   
 /* #endregion */
 /* #region PANELS*/
 .settings-panel {
