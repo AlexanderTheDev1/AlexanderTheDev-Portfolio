@@ -269,7 +269,7 @@ header {
     background-color: var(--primary-color);
     position: sticky;
     top: 0;
-    z-index: 1000;
+    z-index: 1004;
     height: 5rem;
 }
 header h1 {
@@ -557,20 +557,18 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 /* #region KEYFRAMES*/
 @keyframes scale-up {
     from {
-        background-color: var(--about-h2);
         transform: scaleX(0);
     }
     to {
-        background-color: var(--secondary-color);
         transform: scaleX(1);
     }
 }
 
 #progress-bar {
-    background: red;
+    background: var(--secondary-color);
     position: sticky;
     left: 0;
-    top: 4.9rem;
+    top: 5rem;
     z-index: 1002;
     height: 0.7rem;
     width: 100%;
