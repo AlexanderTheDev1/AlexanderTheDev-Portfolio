@@ -127,3 +127,4 @@ console.log("Universal 1rst Script.js is loaded!");
         localStorage.setItem('theme', 'monochromacy');
        });
 });
+

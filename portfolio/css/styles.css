@@ -341,12 +341,15 @@ header h1::first-letter {
 /* #region PANELS*/
 #ham-menu {
     padding-right: 0.5rem;
+    top: 0;
 }
 #ham-menu li {
     text-align: right;
 }
 .menu-wrap {
-    z-index: 1002;  
+    z-index: 2; 
+    position: sticky; 
+    top: 0;
 }
 #ham-menu span {
     color: var(--background-color);
@@ -358,11 +361,11 @@ header h1::first-letter {
     align-items: center;
     background-color: var(--black);
     width: 100%;
-    padding-bottom: 0.7rem;
+    z-index: 2;
     position: fixed;
-    z-index: 1002;
     top: 0;
     padding: 2rem;
+
 }
 .settings-panel button {    
     text-align: center;     
@@ -377,8 +380,9 @@ header h1::first-letter {
     outline: 2px solid var(--background-color);
 }
 .settings-panel p {
-    text-align: center;
-    padding: 1rem 2rem;
+    text-align: center;   
+    padding-top: 4rem;
+    padding-bottom: 1rem;
     color: var(--background-color);
 }
 .settings-panel button:hover, .settings-panel button:focus {
@@ -559,6 +563,7 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 /* #region KEYFRAMES*/
 @keyframes scale-up {
     from {
+
         transform: scaleX(0);
     }
     to {
@@ -568,16 +573,17 @@ img[src*="portfolio/assets/icons/mail.webp"], img[src*="portfolio/assets/icons/g
 
 #progress-bar {
     position: sticky;
-    background: var(--secondary-color);
+    background-color: var(--secondary-color);
     left: 0;
     top: 5rem;
-    z-index: 1004;
+    z-index: 4;
     height: 0.7rem;
     width: 100%;
     transform-origin: 0-50%;
     animation: auto linear scale-up;
     animation-timeline: scroll();
 }
+
 /* #endregion */
 /* #region MEDIA*/
 /*MEDIA -Extra Small Devices*/
