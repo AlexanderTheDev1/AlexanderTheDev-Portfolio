@@ -409,7 +409,6 @@ form h2, form label, form legend, form p, form h3 {
 input[type="radio"], input[type="checkbox"]  {
     cursor: pointer;
     width: 1rem;
-    height: 1rem;
     accent-color:var(--secondary-color);
 }
 select {
@@ -417,19 +416,24 @@ select {
     width: 10.5rem;
     font-size: 1rem;
 }
+
 .activity-option {
-    display: flex;
-    flex-direction: column;
     border: 2px solid var(--secondary-color);
     border-radius: 20px;
-    padding: 0.5rem;
+    padding: 0.25rem;
     margin: 0.5rem;
-
+}
+.activity-option input[type="checkbox"] {
+    padding: 0.25rem;
+    margin: 0.5rem;
 }
 .activity-title {
     margin-bottom: 1rem;
+
 }
 .wrap-a {
+    display: flex;
+    justify-content: center;
     margin: 1rem;
     padding: 0.5rem;
 }
