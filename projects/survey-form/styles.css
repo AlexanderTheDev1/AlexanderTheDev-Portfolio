@@ -253,12 +253,6 @@ h1, h2, h3 {
 }
 /* #endregion */
 /* #region HEADER*/
-/* #region FORM*/
-form h1, form label, form legend, form h2, form p, form h4 {
-    color: var(--text-color);
-}
-
-/* #endregion */
 header {
     display: flex; 
     justify-content: space-between;
@@ -382,6 +376,12 @@ img[src*="portfolio/assets/images/logo.webp"] {
 .settings-panel-active {
     display: flex;
 }
+/* #endregion */
+/* #region FORM*/
+form h1, form label, form legend, form h2, form p, form h4 {
+    color: var(--text-color);
+}
+
 /* #endregion */
 /* #region CONTACT*/
 #contact {
