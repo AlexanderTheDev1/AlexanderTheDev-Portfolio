@@ -111,4 +111,5 @@ document.addEventListener('DOMContentLoaded', function() {
             document.documentElement.setAttribute('data-theme', 'monochromacy');
             localStorage.setItem('theme', 'monochromacy');
            });
+
     });

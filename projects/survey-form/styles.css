@@ -406,7 +406,7 @@ form h2, form label, form legend, form p, form h3 {
     margin: 2rem 0;
     padding: 0.5rem;
 }
-input[type="radio"], input[type="checkbox"]  {
+input[type="radio"], input[type="checkbox"] {
     cursor: pointer;
     width: 1rem;
     accent-color:var(--secondary-color);
@@ -438,6 +438,17 @@ select {
     padding: 0.5rem;
 }
 
+#submit-button {
+    font-size: 2rem;
+    margin: 0.5rem;
+    padding: 0.5rem;
+    border-radius: 20px;
+    background-color: var(--secondary-color);
+}
+#submit-button:hover {
+    color: var(--secondary-color);
+    background-color: var(--black);
+}
 
 /* #endregion */
 /* #region CONTACT*/
