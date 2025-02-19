@@ -386,9 +386,7 @@ fieldset {
     border: none;
     margin: 1rem;
 }
-#name {
-    font-size: 1.5rem;
-}
+
 .form-title {
     font-size: 2rem;
     border: 4px solid var(--secondary-color);
@@ -406,9 +404,8 @@ form h2, form label, form legend, form p, form h3 {
     margin: 2rem 0;
     padding: 0.5rem;
 }
-input[type="radio"], input[type="checkbox"] {
+input[type="checkbox"] {
     cursor: pointer;
-    width: 1rem;
     accent-color:var(--secondary-color);
 }
 select {

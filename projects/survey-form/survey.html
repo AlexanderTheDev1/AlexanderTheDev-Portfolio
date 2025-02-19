@@ -54,21 +54,13 @@
             </div>
               <form>
                 <fieldset>
-                    <legend class="form-title">Tell us a bit about you</legend>     
-                    <label id="name" class="form-question" for="name">Name</label>
-                    <input name="name" type="text" required>
-                    <!--radio buttons-->
-                    <h2 class="form-question">Age Group</h2>
-                    <input name="age-group" type="radio" id="age-group-18-24" value="18-24" required>
-                    <label for="age-group-18-24">18-24</label><br>
-                    <input name="age-group" type="radio" id="age-group-25-34" value="25-34" required>
-                    <label for="age-group-25-34">25-34</label><br>
-                    <input name="age-group" type="radio" id="age-group-35-44" value="35-44" required>
-                    <label for="age-group-35-44">35-44</label><br>
-                    <input name="age-group" type="radio" id="age-group-45-99" value="45-99" required>
-                    <label for="age-group-45-99">45-99</label><br> 
-                </fieldset>
-                <fieldset>
+                    <legend class="form-title">Tell us a bit about you</legend>               
+                    <label for="name" id="name" class="form-question">Name</label>
+                    <input name="name" type="text" required> 
+                    <br>    
+                    <label for="age" id="age" class="form-question">Age</label>
+                    <input name="age" type="text" required>
+                    <br>
                      <!--Dropdown-->
                     <label class="form-question" for="region">Which region are you currently based in?</label> 
                     <select name="region" id="region" autocomplete="off" required>
@@ -82,8 +74,6 @@
                         <option value="south-america">South America</option>
                     </select>
                 </fieldset>
-                
-
                 <fieldset>
                     <legend class="form-title">Activities</legend>
                     <h2 class="form-question">What are your usual activities?</h2>
